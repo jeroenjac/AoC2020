@@ -1,3 +1,6 @@
+# Other (added on top of template)
+#*.swp
+
 # Prerequisites
 *.d
 
