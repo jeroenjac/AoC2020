@@ -29,7 +29,6 @@ int		main(void)
 	char	c[n_lines];
 	char	**pw;
 
-
 	printf("allocating int arrays\n");
 	minc = calloc(n_lines, sizeof(int));
 	maxc = calloc(n_lines, sizeof(int));
@@ -107,6 +106,7 @@ int		main(void)
 
 	//Step 5: Count and Analyse - pt1
 
+	printf("==== RESULTS ====\n");
 	int		cntc = 0;
 	int		valid = 0;
 
@@ -151,4 +151,13 @@ int		main(void)
 		i++;
 	}
 	printf("Number of valid pw (pt2)= %i\n", valid);
+	i = 0;
+	while (i < n_lines)
+	{
+		free(pw[i]);
+		i++;;
+	}
+	free(pw);
+	free(minc);
+	free(maxc);
 }

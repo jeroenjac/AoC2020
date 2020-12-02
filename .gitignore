@@ -1,5 +1,5 @@
 # Other (added on top of template)
-#*.swp
+*.swp
 
 # Prerequisites
 *.d
