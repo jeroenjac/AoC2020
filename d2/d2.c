@@ -67,15 +67,15 @@ int		main(void)
 			minc[i] = ((char)*pt - '0') + 10 * minc[i];
 			pt++;
 		}
-		pt++; //The '-'
+		pt++; //Skip the '-'
 		while (*pt != ' ')
 		{
 			maxc[i] = ((char)*pt - '0') + 10 * maxc[i];
 			pt++;
 		}
-		pt++; //The space
+		pt++; //Skip the space
 		c[i] = *pt;
-		pt = pt + 3; //Skip the char, : and space
+		pt = pt + 3; //Skip 3 positions (c, ':' and ' ')
 		while (*pt != '\n')
 		{
 			*(*(pw + i) + j) = *pt;
@@ -105,7 +105,6 @@ int		main(void)
 	printf("pw = %s\n", pw[i]);
 
 	//Step 5: Count and Analyse - pt1
-
 	printf("==== RESULTS ====\n");
 	int		cntc = 0;
 	int		valid = 0;
@@ -132,7 +131,6 @@ int		main(void)
 	printf("Number of valid pw (pt1) = %i\n", valid);
 	
 	//Step 5b: Count and Analyse - pt2
-
 	cntc = 0;
 	valid = 0;
 
@@ -151,6 +149,8 @@ int		main(void)
 		i++;
 	}
 	printf("Number of valid pw (pt2)= %i\n", valid);
+	
+	//Freeing memory
 	i = 0;
 	while (i < n_lines)
 	{
@@ -160,4 +160,6 @@ int		main(void)
 	free(pw);
 	free(minc);
 	free(maxc);
+
+	return (0);
 }
