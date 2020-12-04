@@ -19,7 +19,8 @@ typedef struct	passport
 	char	cid[MAXL];
 }			pp;
 
-void	readdatafield(char *pt, char *field, pp *curpp);
+void	storedata(char *file, int lines, pp *allpp);
+int		getnumberoflines(char *file, int *ppnumpt);
 int		ppval(pp *file);
 int		ppval2(pp *file);
 int		valbyr(pp *file);
@@ -34,26 +35,15 @@ int		main(void)
 {
 	char	*file = "input.txt";
 	FILE	*in_file;
-	char	line[MAXBUF];
-
-	printf("h = %i\n", atoi("156cm"));
 
 	printf("= CHECKS AND BALANCES ========================================\n");
 	//Step 1: Getting number of lines
-	in_file = fopen(file, "r");
-	if (in_file == NULL)
-		printf("File read failed\n");
+	int		lines;
+	int		ppfiles;
+	int		*ppnumpt;
+	ppnumpt = &ppfiles;
 	
-	int		lines = 0;
-	int		ppfiles = 1;
-	int		i;
-	while (fgets(line, sizeof(line), in_file) != NULL)
-	{
-		lines++;
-		if (*line == '\n')
-			ppfiles++;
-	}
-	fclose(in_file);
+	lines = getnumberoflines(file, ppnumpt);
 
 	printf("Number of lines: %i\n", lines);
 	printf("Number of passport files: %i\n", ppfiles);
@@ -68,88 +58,12 @@ int		main(void)
 	if (allpp == NULL)
 		printf("Allocation for pp data array failed");
 	
-	printf("start reading input\n");
-
-	char	*pt;
-	char	*eod;
-	int		kl = 4;
-
 	//Step 3: Reading file per MAXBUF chars
-	in_file = fopen(file, "r");
-	if (in_file == NULL)
-		printf("File read failed\n");
-	i = 0;
-	while (fgets(line, MAXBUF, in_file) != NULL)
-	{
-		//printf("reading: %s", line);
-		if (*line != '\n')
-		{
-			pt = line;
-			//Here sth smart to get pp fields
-			if ((pt = strstr(line, "byr:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].byr, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "iyr:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].iyr, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "eyr:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].eyr, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "hgt:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].hgt, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "hcl:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].hcl, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "ecl:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].ecl, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "pid:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].pid, pt + kl, eod - (pt + kl));
-			}
-			if ((pt = strstr(line, "cid:")) != NULL)
-			{
-				eod = strchr(pt, ' ');
-				if (eod == NULL)
-					eod = strchr(pt, '\n');
-				strncpy(allpp[i].cid, pt + kl, eod - (pt + kl));
-			}
-		}
-		else
-			i++;
-	}
-	fclose(in_file);
-		
+	printf("start reading input\n");
+	storedata(file, lines, allpp);	
+	
 	printf("= PRINT TEST DATA ============================================\n");
-	i = 31;;
+	int	i = 31;
 	int	ppe = 31;
 	//Validate if reading data is succes
 	while (i <= ppe)
@@ -182,8 +96,11 @@ int		main(void)
 		i++;
 	}
 	printf("Number of valid passports: %i\n", totvalid);
-	printf("Number of valid passports (pt2): %i\n", totvalid2);
 	//251 is too high
+	
+	printf("Number of valid passports (pt2): %i\n", totvalid2);
+	
+	free(allpp);
 	return (0);
 }
 
@@ -208,11 +125,28 @@ int		ppval(pp *file)
 
 int		ppval2(pp *file)
 {
+	/*
 	int	valid;
 
 	valid = valbyr(file) * valiyr(file) * valeyr(file) * valhgt(file)\
 			*valhcl(file) * valecl(file) * valpid(file);;
-	return(valid);
+	return (valid);
+	*/
+	if (valbyr(file) == 0)
+		return 0;
+	if (valiyr(file) == 0)
+		return 0;
+	if (valeyr(file) == 0)
+		return 0;
+	if (valhgt(file) == 0)
+		return 0;
+	if (valhcl(file) == 0)
+		return 0;
+	if (valecl(file) == 0)
+		return 0;
+	if (valpid(file) == 0)
+		return 0;
+	return 1;
 }
 
 int		valbyr(pp *file)
@@ -330,3 +264,110 @@ void	readdatafield(char *pt, char *field, pp *curpp)
 	}
 }
 
+void		storedata(char *file, int lines, pp *allpp)
+{
+	FILE	*in_file;
+	char	line[MAXBUF];
+	int		i;
+	
+	char	*pt; 
+	char	*eod;
+	int		kl = 4;
+
+	in_file = fopen(file, "r");
+	if (in_file == NULL)
+		printf("File read failed\n");
+	
+	i = 0;
+	while (fgets(line, MAXBUF, in_file) != NULL)
+	{
+		//printf("reading: %s", line);
+		if (*line != '\n')
+		{
+			pt = line;
+			//Here sth smart to get pp fields
+			if ((pt = strstr(line, "byr:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].byr, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "iyr:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].iyr, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "eyr:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].eyr, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "hgt:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].hgt, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "hcl:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].hcl, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "ecl:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].ecl, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "pid:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].pid, pt + kl, eod - (pt + kl));
+			}
+			if ((pt = strstr(line, "cid:")) != NULL)
+			{
+				eod = strchr(pt, ' ');
+				if (eod == NULL)
+					eod = strchr(pt, '\n');
+				strncpy(allpp[i].cid, pt + kl, eod - (pt + kl));
+			}
+		}
+		else
+			i++;
+	}
+	fclose(in_file);
+}
+
+int		getnumberoflines(char *file, int *ppnumpt)
+{
+	FILE	*in_file = fopen(file, "r");
+	
+	if (in_file == NULL)
+		printf("File read failed\n");
+	
+	char	line[MAXBUF];
+	int		lines = 0;
+	int		ppfiles = 1;
+	int		i;
+	while (fgets(line, sizeof(line), in_file) != NULL)
+	{
+		lines++;
+		if (*line == '\n')
+			ppfiles++;
+	}
+	*ppnumpt = ppfiles;
+	fclose(in_file);
+
+	return (lines);
+}
