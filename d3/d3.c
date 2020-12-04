@@ -118,7 +118,7 @@ int		main(void)
 	printf(">>>>>> Solution (pt 1)\n");
 	printf("Sledge sees %i trees\n", sledge(numfield, field, 1, 3, n_lines, xmax));
 		
-	printf(">>>>>> Solution (pt 1)\n");
+	printf(">>>>>> Solution (pt 2)\n");
 	int		right = 1;
 	int		down = 1;
 	int		trees2[5];
@@ -141,7 +141,7 @@ int		main(void)
 	}
 	printf("Final answer = %li\n", answer);
 	
-	printf(">>>>>> DEBUG\n");
+	//printf(">>>>>> DEBUG\n");
 	//printrawdata(field, n_lines, xmax);
 	//printnumfield(numfield, n_lines, xmax);
 
