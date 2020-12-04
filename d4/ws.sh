@@ -1,4 +1,3 @@
-#!/bin/bash
 longest=0
 for word in $(<input.txt)
 do
