@@ -125,13 +125,6 @@ int		ppval(pp *file)
 
 int		ppval2(pp *file)
 {
-	/*
-	int	valid;
-
-	valid = valbyr(file) * valiyr(file) * valeyr(file) * valhgt(file)\
-			*valhcl(file) * valecl(file) * valpid(file);;
-	return (valid);
-	*/
 	if (valbyr(file) == 0)
 		return 0;
 	if (valiyr(file) == 0)
@@ -250,18 +243,27 @@ int		valpid(pp *file)
 	return 1;
 }
 
-void	readdatafield(char *pt, char *field, pp *curpp)
+int		getnumberoflines(char *file, int *ppnumpt)
 {
-	char	*eod;
-
-	if ((pt = strstr(pt, field)) != NULL)
+	FILE	*in_file = fopen(file, "r");
+	
+	if (in_file == NULL)
+		printf("File read failed\n");
+	
+	char	line[MAXBUF];
+	int		lines = 0;
+	int		ppfiles = 1;
+	int		i;
+	while (fgets(line, sizeof(line), in_file) != NULL)
 	{
-		eod = strchr(pt, ' ');
-		if (eod == NULL)
-			eod = strchr(pt, '\n');
-		strncpy(curpp->byr, pt, eod - pt); //CAN NOT MAKE ->XXX dynamic :(.
-		//Not null term, but not needed bc calloc = 00000...0?
+		lines++;
+		if (*line == '\n')
+			ppfiles++;
 	}
+	*ppnumpt = ppfiles;
+	fclose(in_file);
+
+	return (lines);
 }
 
 void		storedata(char *file, int lines, pp *allpp)
@@ -349,25 +351,16 @@ void		storedata(char *file, int lines, pp *allpp)
 	fclose(in_file);
 }
 
-int		getnumberoflines(char *file, int *ppnumpt)
+void	readdatafield(char *pt, char *field, pp *curpp)
 {
-	FILE	*in_file = fopen(file, "r");
-	
-	if (in_file == NULL)
-		printf("File read failed\n");
-	
-	char	line[MAXBUF];
-	int		lines = 0;
-	int		ppfiles = 1;
-	int		i;
-	while (fgets(line, sizeof(line), in_file) != NULL)
-	{
-		lines++;
-		if (*line == '\n')
-			ppfiles++;
-	}
-	*ppnumpt = ppfiles;
-	fclose(in_file);
+	char	*eod;
 
-	return (lines);
+	if ((pt = strstr(pt, field)) != NULL)
+	{
+		eod = strchr(pt, ' ');
+		if (eod == NULL)
+			eod = strchr(pt, '\n');
+		strncpy(curpp->byr, pt, eod - pt); //CAN NOT MAKE ->XXX dynamic :(.
+		//Not null term, but not needed bc calloc = 00000...0?
+	}
 }
