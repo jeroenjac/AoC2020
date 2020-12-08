@@ -4,20 +4,8 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-//#include "libft.h"
 
 #define	MAXBUF 200
-
-typedef struct	ds
-{
-	char	base[15];
-	char	adj[15];
-	char	col[40];
-	int		csg;		//Contains Shiny Gold #
-	int		empty;		//Equal to 1 for empty bag
-	char	cont[200];
-}			color;
-
 
 // A structure to represent an adjacency list node 
 struct AdjListNode 
@@ -42,23 +30,68 @@ struct Graph
     struct AdjList* array; 
 }; 
  
-void printGraph(struct Graph* graph); 
-void addEdge(struct Graph* graph, int src, int dest); 
-struct Graph* createGraph(int V);
-struct AdjListNode* newAdjListNode(int dest); 
+typedef struct	ds
+{
+	char	base[15];
+	char	adj[15];
+	char	col[40];
+	int		csg;			//Contains Shiny Gold #
+	int		empty;			//Equal to 1 for empty bag
+	char	cont[200];		//'Colors' seperated by |
+	int		bagIDs[10];		//'ColorIDs' (lines) as int
+}			color;
+
+void	printGraph(struct Graph* graph); 
+void	addEdge(struct Graph* graph, int src, int dest); 
+struct	Graph*			createGraph(int V);
+struct	AdjListNode*	newAdjListNode(int dest); 
 
 void	storedata(char *file, int lines, struct ds *groups);
 int		getnumberoflines(char *file, int *ptparts);
 int		getcolid(char *colname, color *dat, int lines);
 void	filldata(int lines, struct ds *dat, struct Graph* graph);
-int		checkCSG(struct Graph* graph, color *dat, int lines, int v);
 int		goldfinder(struct Graph *graph, color *dat, int lines, int line);
+int		hasshinygoldbag(color *dat, int line, int goldID);
 
-int		main(void)
+int		hasshinygoldbag(color *dat, int line, int goldID)
 {
-	char	*file = "input.txt";
-	//char	*file = "example.txt";
-	FILE	*in_file;
+	int		bagN = 0;
+	int		check_bagID = dat[line].bagIDs[bagN];
+
+	while (check_bagID != 707)
+	{
+		if (check_bagID == goldID)
+			return (1);
+		return (hasshinygoldbag(dat, check_bagID, goldID));
+		bagN++;
+		check_bagID = dat[line].bagIDs[bagN];
+	}
+	return (0);
+
+	//content has gold -> return 1
+	//no content -> return 0
+	//otherwise -> check content 1 by one
+}
+
+int		main(int argc, char **argv)
+{
+	int		ft = 0;
+	char	*file0 = "input.txt";
+	char	*file1 = "example.txt";
+	char	*file2 = "example_adj.txt";
+	char	*file3 = "example_simple.txt";
+	char	*file;
+
+	if (argc > 1)
+		ft = atoi(argv[1]);
+	if (ft == 0)
+		file = file0;
+	else if (ft == 1)
+		file = file1;
+	else if (ft == 2)
+		file = file2;
+	else if (ft == 3)
+		file = file3;
 
 	printf("= CHECKS AND BALANCES ========================================\n");
 	//Step 1: Getting number of lines
@@ -69,10 +102,10 @@ int		main(void)
 	
 	lines = getnumberoflines(file, ptparts);
 
-	//Checks tbd
+	//Checks TBD / DONE:
 	// 1 - does every line has one 'rule', e.g. not "a contain b contain c"? YES
 	// 2 - does every line represent a unique color, e.g. not two lines "a contain DEF" 
-	// "a contain IJK"? YES
+	//		"a contain IJK"? YES
 	// 3 - are there similar colors, like "blue" and "pale blue"?
 	//		NOT APPLICABLE - EXTENSIVE CHECK 2.
 	printf("Number of lines: %i\n", lines);
@@ -80,19 +113,21 @@ int		main(void)
 
 	printf("= ALLOC MEMORY & READING DATA ================================\n");
 	//Step 2: Allocating arrays
-	color	*colorlines;
-    
-	int V = lines;; 
-    struct Graph* graph = createGraph(V); 
 
 	printf("Allocating data array...\n");
+	color	*colorlines;
 	colorlines = calloc(lines, sizeof(color));
 	if (colorlines == NULL)
 		printf("Allocation for data array failed");
 	
+	printf("Allocating graph...\n");
+	int V = lines; 
+    struct Graph* graph = createGraph(V); 
+	
 	//Step 3: Reading file per MAXBUF chars
 	printf("Start reading input...\n");
 	storedata(file, lines, colorlines);
+	printf("Enriching data...\n");
 	filldata(lines, colorlines, graph);
 	
 	printf("= CHECKS EXTRA ===============================================\n");
@@ -102,19 +137,24 @@ int		main(void)
 	while (i < lines && db == 0)
 	{
 		j = i + 1;
-		while (j < lines && db == 0)
+		while (j < lines)
 		{
-			if (	!strcmp(colorlines[i].adj, colorlines[j].adj) &&\
-					!strcmp(colorlines[i].base, colorlines[j].base)	)
-				db = 1;
+			//if (	!strcmp(colorlines[i].adj, colorlines[j].adj) &&\
+			//		!strcmp(colorlines[i].base, colorlines[j].base)	)
+			if (!strcmp(colorlines[i].col, colorlines[j].col))
+				db++;
 			j++;
 		}
 		i++;
 	}
+	printf("Are there double colours (db == 0 -> no)\t");
 	printf("db = %i\n", db);
 
 	printf("= PRINT TEST DATA ============================================\n");
-	int	lastprint = 30;
+	int	lastprint = 10;
+
+	if (argc > 2)
+		lastprint = atoi(argv[2]);
 	
 	//Validate if reading data is succes
 	i = 0;
@@ -123,39 +163,38 @@ int		main(void)
 		printf("line %-3i ", i);
 		printf("col=%-20s", colorlines[i].col);
 		printf("oth=%-60s", colorlines[i].cont);
+		printf("\nline %-3i ", i);
+		printf("col=%-20s", colorlines[i].col);
+		printf("bagIDs=");
+		j = 0;
+		while (colorlines[i].bagIDs[j] != -9 && j < 10)
+		{
+			printf("%i-", colorlines[i].bagIDs[j]);
+			j++;
+		}
+		printf("\n");
 		//printf("adj=%s\t", colorlines[i].adj);
 		//printf("base=%s\t", colorlines[i].base);
-		printf("csg=%i ", colorlines[i].csg);
-		printf("empty=%i\n", colorlines[i].empty);
+		//printf("csg=%i ", colorlines[i].csg);
+		//printf("empty=%i\n", colorlines[i].empty);
 		i++;
 	}
 
-	printGraph(graph); 
+	if (!(argc > 3 && atoi(argv[3]) == 0))
+		printGraph(graph);
 	
 	printf("= PT1 ANALYSIS ===============================================\n");
-    
-	
-	int	bagswithgold = 0;
-	//Calc number of questions with any person "y", per group
+
+	int		bagswithgold = 0;
+	int		goldID = getcolid("shiny gold", colorlines, lines);
 	i = 0;
-	int ret = 99;
 	while (i < lines)
 	{
-		//ret = checkCSG(graph, colorlines, lines, i);
-		ret = goldfinder(graph, colorlines, lines, i);
-		if (ret == 42)
-			colorlines[i].csg = 1;
-		//CheckGold colorline(i)
-		//	- this fun can see "empty" - DONE / return 2; ALWAYS IN THE END
-		//  - this fun can see "gold" - DONE / return 1;
-		//	- this fun can see sth else - CALL AGAIN
-		if (colorlines[i].csg > 0)
-			bagswithgold++;
-		printf("i = %i, ret = %i, bags = %i\n", i, ret, bagswithgold);
+		bagswithgold = bagswithgold + hasshinygoldbag(colorlines, i, goldID);
 		i++;
 	}
-
 	printf("Answer part 1 = %i\n", bagswithgold);
+	//Not 6;
 /*	
 	printf("= PT2 ANALYSIS ===============================================\n");
 	//Calc number of questions all "y", per group
@@ -266,37 +305,50 @@ void	filldata(int lines, struct ds *dat, struct Graph* graph)
 {
 	char	*pt, *end;
 	char	newcolor[40];
-	int		i, j;
+	int		i, colID, bagN;
 		
 	i = 0;
-	j = -1;
 	//Replace with get from dat
 	while (i < lines)
 	{
-		dat[i].csg = 0;
+		colID = 707;
+		bagN = 0;
+		dat[i].bagIDs[bagN] = colID;		//Init to ColID (707 - PLANE :) ) 
 		pt = dat[i].cont;
+		//dat[i].csg = 0;		//Initializing CSG - not needed?
 		while (*pt != '\0')
 		{
 			bzero(newcolor, 40);
 			end = strchr(pt, '|');
 			strncpy(newcolor, pt, end - pt);
 			// ADD vertices
-			j = getcolid(newcolor, dat, lines);
-			if (j >= 0)
-				addEdge(graph, i, j); 
+			colID = getcolid(newcolor, dat, lines);
+			if (colID >= 0)
+			{
+				dat[i].bagIDs[bagN] = colID;
+				bagN++;
+				//addEdge(graph, i, colID);
+			}
+			else
+				printf("Bag %s NOT FOUND in index (%i)\n", newcolor, colID);
 			pt = end + 1;
 		}
+		dat[i].bagIDs[bagN] = 707;		//Init to ColID (707 - PLANE :) ) 
 		i++;
 	}
 }
 
-int		containshinygold(color *checkcolor)
+int		getcolid(char *colname, color *dat, int lines)
 {
-	if (checkcolor->empty == 1)
-		return 0;
-	else if (checkcolor->csg == 1)
-		return 1;
-	return 2; //Check next color, but this is a list of different length :(
+	int	i = 0;
+
+	while (i < lines)
+	{
+		if (strcmp(colname, dat[i].col) == 0)
+			return (i);
+		i++;
+	}
+	return (-1);
 }
 
 //How to 'start'  this fun?
@@ -318,46 +370,11 @@ int		goldfinder(struct Graph *graph, color *dat, int lines, int line)
 	}
 	return (0);
 }
-
-
-int		checkCSG(struct Graph* graph, color *dat, int lines, int v) 
-{ 
-	int	goldid = getcolid("shiny gold", dat, lines);
-	int	foundgold = 0;
-
-	printf("Checking line/col %i\n", v);
-    struct AdjListNode* pCrawl = graph->array[v].head; //In this v I need to fill dest
-	//printf("\n Adjacency list of vertex %d\n head ", v); 
-	while (pCrawl && foundgold != 1) 
-    {
-		//printf("-> %d", pCrawl->dest);
-		printf("dest: %i (=? %i)\n", pCrawl->dest, pCrawl->dest == goldid);
-		if (pCrawl->dest == goldid)
-		{
-			dat[v].csg = 33;
-			foundgold = 1;
-			return (1);
-		}
-		else
-			checkCSG(graph, dat, lines, pCrawl->dest);
-		pCrawl = pCrawl->next; 
-    }
-	return (2);
-	//printf("\n");
-}
-
-int		getcolid(char *colname, color *dat, int lines)
-{
-	int	i = 0;
-
-	while (i < lines)
-	{
-		if (strcmp(colname, dat[i].col) == 0)
-			return (i);
-		i++;
-	}
-	return (-1);
-}
+  
+/*
+** FUNCTIONS TO WORK WITH GRAPH BUILD W/ LINKED LISTS
+** SOURCE: GEEK FOR GEEKS
+*/
   
 // A utility function to create a new adjacency list node 
 struct AdjListNode* newAdjListNode(int dest) 
@@ -388,8 +405,8 @@ struct Graph* createGraph(int V)
         graph->array[i].head = NULL;
 
     return graph; 
-} 
-  
+}
+
 // Adds an edge to an undirected graph 
 void addEdge(struct Graph* graph, int src, int dest) 
 { 
@@ -401,7 +418,7 @@ void addEdge(struct Graph* graph, int src, int dest)
     graph->array[src].head = newNode;
 
 /*
-**	POGING OM NEWNODE ACHTERAAN VAST TE MAKEN
+** TRY TO CHANGE THE ORDER OF NODES, e.g. NEWNODE created on END
 
 	newNode->next = NULL;
 	if (graph->array[src].head == NULL)
@@ -415,7 +432,7 @@ void addEdge(struct Graph* graph, int src, int dest)
 */
 
 /* 
-** NOT NEEDED FOR THIS PROBLEM
+** NOT NEEDED FOR THIS PROBLEM (DIRECTED GRAPH)
     
 	// Since graph is undirected, add an edge from 
     // dest to src also 
