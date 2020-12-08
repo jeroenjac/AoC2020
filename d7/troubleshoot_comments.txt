@@ -1,0 +1,76 @@
+** Error checking part 1 **
+
+//First error G = 0.
+//For line 78 (pale beige): (wavy crimson - 523 OK)  - (shiny gold 374 OK)
+//check_bag_ID = 523.
+//Not equal to 707 (end)
+//Nog equal to goldID
+//go check for line 523 - result is ?
+//go check for line 374 == GOLD
+//WORKS
+
+//TEST example_adj DOES NOT WORK
+//Chain 8 - 9 - 10 (has gold) only counts G:1 for line 10
+//What happens?
+//Line 8 check
+	//check_bag_ID = 11
+	//Not equal to 707
+	//Not equal to 4 (gold ID)
+	//Line 11 check: Call function for line 11
+		//check_bag_ID = 12
+		//No 707 / no gold
+		//Line 12 check: Call function for line 12
+			//check_bag_ID = 707
+			//return 0
+		//Found gold = 0
+		//BagN 0->1;
+		//check_bag_ID = 707
+		//707 --> end loop --> return (0)
+	//Found fold = 0
+	//BagN 0->1
+	//check_bag_ID = 9
+	//No 707 / no gold (also foundgold = 0)
+	//Line 9 check: Call function for line 9
+		//check_bag_ID = 10
+		//Not equal to 707 or gold
+		//Line 10 check: Call function for line 10
+			//Check_bag_ID = 4
+			//GOLD
+			//Return 1
+		//foundgold = 1
+		//BagN 0->1
+		//Check_bag_ID = 707
+		//707 --> end loop --> return (0)
+
+** error checking part 2 using example part 1
+
+//FUN WITH LINE 4 (MAIN - SHINY GOLD)
+//bagN = 0
+//cID = 5
+//bags = 0
+//cID not 707
+//bags = 1 * (1 + X)
+	//FUN WITH LINE 5
+	//bagN = 0
+	//cID = 7
+	//bags = 0
+	//cID not 707
+	//bags = 3 * (1 + Y)
+		//FUN WITH LINE 7
+		//bagN = 0
+		//cID = 707
+		//bags = 0
+		//cID is 707 -> exit while
+		//return (0)
+	//bags = 3 * (1 + 0) = 3
+	//bagN->1;
+	//cID = 8
+	//bags = 4 * (1 + Z)
+		//FUN WITH LINE 8
+		//...
+		//return 0
+	//bags = 4 * (1 + 0) = 4
+	//bagN->2
+	//cID = 707
+	//return (bags)		(WHICH IS 4 NOT 7)
+//bags = 1 * (1 + 4) = 5

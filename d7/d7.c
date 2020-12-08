@@ -6,71 +6,66 @@
 #include <math.h>
 
 #define	MAXBUF 200
-
-// A structure to represent an adjacency list node 
-struct AdjListNode 
-{ 
-    int dest; 
-    struct AdjListNode* next; 
-}; 
-  
-// A structure to represent an adjacency list 
-struct AdjList 
-{ 
-    struct AdjListNode *head;  
-}; 
-  
-// A structure to represent a graph. A graph 
-// is an array of adjacency lists. 
-// Size of array will be V (number of vertices  
-// in graph) 
-struct Graph 
-{ 
-    int V; 
-    struct AdjList* array; 
-}; 
  
 typedef struct	ds
 {
-	char	base[15];
-	char	adj[15];
 	char	col[40];
-	int		csg;			//Contains Shiny Gold #
-	int		empty;			//Equal to 1 for empty bag
 	char	cont[200];		//'Colors' seperated by |
 	int		bagIDs[10];		//'ColorIDs' (lines) as int
+	int		bagIDcts[10];	//'ColorIDs' (lines) as int
 }			color;
-
-void	printGraph(struct Graph* graph); 
-void	addEdge(struct Graph* graph, int src, int dest); 
-struct	Graph*			createGraph(int V);
-struct	AdjListNode*	newAdjListNode(int dest); 
 
 void	storedata(char *file, int lines, struct ds *groups);
 int		getnumberoflines(char *file, int *ptparts);
 int		getcolid(char *colname, color *dat, int lines);
-void	filldata(int lines, struct ds *dat, struct Graph* graph);
-int		goldfinder(struct Graph *graph, color *dat, int lines, int line);
+void	filldata(int lines, struct ds *dat);
 int		hasshinygoldbag(color *dat, int line, int goldID);
+long long	countGbags(color *dat, int line);
+
+int		getcolid(char *colname, color *dat, int lines)
+{
+	int	i = 0;
+
+	while (i < lines)
+	{
+		if (strcmp(colname, dat[i].col) == 0)
+			return (i);
+		i++;
+	}
+	return (-1);
+}
+
+//Assumption: a gold bag inside a gold bag does count, though makes it infinite loop?
+long long	countGbags(color *dat, int line)
+{
+	int			bagN = 0;
+	int			check_bagID = dat[line].bagIDs[bagN];
+	long long	bags = 0;
+
+	while (check_bagID != 707)
+	{
+		bags = bags + dat[line].bagIDcts[bagN] * (1 +  countGbags(dat, check_bagID));
+		bagN++;
+		check_bagID = dat[line].bagIDs[bagN];
+	}
+	return (bags);
+}
 
 int		hasshinygoldbag(color *dat, int line, int goldID)
 {
 	int		bagN = 0;
 	int		check_bagID = dat[line].bagIDs[bagN];
+	int		foundgold = 0;
 
 	while (check_bagID != 707)
 	{
-		if (check_bagID == goldID)
+		foundgold = hasshinygoldbag(dat, check_bagID, goldID);
+		if (check_bagID == goldID || foundgold == 1)
 			return (1);
-		return (hasshinygoldbag(dat, check_bagID, goldID));
 		bagN++;
 		check_bagID = dat[line].bagIDs[bagN];
 	}
 	return (0);
-
-	//content has gold -> return 1
-	//no content -> return 0
-	//otherwise -> check content 1 by one
 }
 
 int		main(int argc, char **argv)
@@ -78,8 +73,9 @@ int		main(int argc, char **argv)
 	int		ft = 0;
 	char	*file0 = "input.txt";
 	char	*file1 = "example.txt";
-	char	*file2 = "example_adj.txt";
-	char	*file3 = "example_simple.txt";
+	char	*file2 = "example2.txt";
+	char	*file3 = "example_adj.txt";
+	char	*file4 = "example_simple.txt";
 	char	*file;
 
 	if (argc > 1)
@@ -92,6 +88,8 @@ int		main(int argc, char **argv)
 		file = file2;
 	else if (ft == 3)
 		file = file3;
+	else if (ft == 4)
+		file = file4;
 
 	printf("= CHECKS AND BALANCES ========================================\n");
 	//Step 1: Getting number of lines
@@ -119,16 +117,12 @@ int		main(int argc, char **argv)
 	colorlines = calloc(lines, sizeof(color));
 	if (colorlines == NULL)
 		printf("Allocation for data array failed");
-	
-	printf("Allocating graph...\n");
-	int V = lines; 
-    struct Graph* graph = createGraph(V); 
-	
+		
 	//Step 3: Reading file per MAXBUF chars
 	printf("Start reading input...\n");
 	storedata(file, lines, colorlines);
 	printf("Enriching data...\n");
-	filldata(lines, colorlines, graph);
+	filldata(lines, colorlines);
 	
 	printf("= CHECKS EXTRA ===============================================\n");
 	int	i = 0, j = 0;
@@ -139,8 +133,6 @@ int		main(int argc, char **argv)
 		j = i + 1;
 		while (j < lines)
 		{
-			//if (	!strcmp(colorlines[i].adj, colorlines[j].adj) &&\
-			//		!strcmp(colorlines[i].base, colorlines[j].base)	)
 			if (!strcmp(colorlines[i].col, colorlines[j].col))
 				db++;
 			j++;
@@ -151,42 +143,47 @@ int		main(int argc, char **argv)
 	printf("db = %i\n", db);
 
 	printf("= PRINT TEST DATA ============================================\n");
-	int	lastprint = 10;
+	int	lastprint = 5;
 
 	if (argc > 2)
 		lastprint = atoi(argv[2]);
 	
+	int		goldID = getcolid("shiny gold", colorlines, lines);
+	
 	//Validate if reading data is succes
 	i = 0;
-	while (i <= lastprint)
+	while (i < lastprint)
 	{
 		printf("line %-3i ", i);
 		printf("col=%-20s", colorlines[i].col);
-		printf("oth=%-60s", colorlines[i].cont);
-		printf("\nline %-3i ", i);
-		printf("col=%-20s", colorlines[i].col);
-		printf("bagIDs=");
+		printf("cts=");
 		j = 0;
-		while (colorlines[i].bagIDs[j] != -9 && j < 10)
+		while (j < 10)
 		{
-			printf("%i-", colorlines[i].bagIDs[j]);
+			printf("%i,", colorlines[i].bagIDcts[j]);
 			j++;
 		}
+		//printf("\toth=%-60s", colorlines[i].cont);
+
+		printf("\tbagIDs=");
+		j = - 1;
+
+		while (colorlines[i].bagIDs[j] != 707)
+		{
+			printf("%i-", colorlines[i].bagIDs[j + 1]);
+			j++;
+		}
+		//printf("G:%i", hasshinygoldbag(colorlines, i, goldIDt));
+		//printf("T:%lli", countGbags(colorlines, i));
 		printf("\n");
-		//printf("adj=%s\t", colorlines[i].adj);
-		//printf("base=%s\t", colorlines[i].base);
-		//printf("csg=%i ", colorlines[i].csg);
-		//printf("empty=%i\n", colorlines[i].empty);
 		i++;
 	}
 
-	if (!(argc > 3 && atoi(argv[3]) == 0))
-		printGraph(graph);
-	
 	printf("= PT1 ANALYSIS ===============================================\n");
 
 	int		bagswithgold = 0;
-	int		goldID = getcolid("shiny gold", colorlines, lines);
+	int		goldIDt = getcolid("shiny gold", colorlines, lines);
+	
 	i = 0;
 	while (i < lines)
 	{
@@ -195,24 +192,16 @@ int		main(int argc, char **argv)
 	}
 	printf("Answer part 1 = %i\n", bagswithgold);
 	//Not 6;
-/*	
-	printf("= PT2 ANALYSIS ===============================================\n");
-	//Calc number of questions all "y", per group
-	long	num_q_all_yes = 0;
-	i = 0;
-	while (i < parts)
-	{
-		q = 0;
-		while (q < 26)
-		{
-			num_q_all_yes += groups[i].q_all[q];
-			q++;
-		}
-		i++;
-	}
+	//But 335.
 	
-	printf("Answer part 2 = %li\n", num_q_all_yes);
-*/
+	printf("= PT2 ANALYSIS ===============================================\n");
+	
+	long long		bagsingold = 0;
+
+	bagsingold = countGbags(colorlines, goldID);
+
+	printf("Answer part 2 = %lli\n", bagsingold);
+
 	printf("= END =======================================================\n");
 	free(colorlines);
 	return (0);
@@ -264,26 +253,22 @@ void		storedata(char *file, int lines, struct ds *dat)
 		printf("File read failed\n");
 	
 	i = 0;
-	j = -1;
 	while (fgets(line, MAXBUF, in_file) != NULL)
 	{
 		//printf("reading: %s", line);
 		pt = line;
-		end = strchr(pt, ' ');
-		strncpy(dat[i].adj, pt, end - pt);
-		pt = end + 1;
-		end = strchr(pt, ' ');
-		strncpy(dat[i].base, pt, end - pt);
-		//Only this one is important for endresult
+		end = strchr(pt, ' ') + 1;
+		end = strchr(end, ' ');
 		strncpy(dat[i].col, line, end - line);
 		pt = strstr(pt, "contain") + 7;
-		if (strstr(pt, "no other"))
-			dat[i].empty = 1;
-		else
+		j = 0;
+		if (strstr(pt, "no other") == NULL)
 		{
-			pt = pt + 3;			//pt at begin of new col
+			pt = pt + 1;			//pt at begin of new col (number)
 			while (pt != NULL)
 			{
+				dat[i].bagIDcts[j] = (int)(*pt - '0');
+				pt = pt + 2;
 				bzero(newcolor, 40);
 				end = strchr(pt, ' ') + 1;
 				end = strchr(end, ' ');
@@ -292,16 +277,21 @@ void		storedata(char *file, int lines, struct ds *dat)
 				strcat(dat[i].cont, "|");
 				pt = strchr(pt, ',');
 				if (pt != NULL)
-					pt = pt + 4;
+				{
+					pt = pt + 2;
+					j++;
+				}
 			}
 		}
+		
 		i++;
 	}
 	fclose(in_file);
 }
 
 //This is data enrichment
-void	filldata(int lines, struct ds *dat, struct Graph* graph)
+
+void	filldata(int lines, struct ds *dat)
 {
 	char	*pt, *end;
 	char	newcolor[40];
@@ -327,7 +317,6 @@ void	filldata(int lines, struct ds *dat, struct Graph* graph)
 			{
 				dat[i].bagIDs[bagN] = colID;
 				bagN++;
-				//addEdge(graph, i, colID);
 			}
 			else
 				printf("Bag %s NOT FOUND in index (%i)\n", newcolor, colID);
@@ -337,146 +326,3 @@ void	filldata(int lines, struct ds *dat, struct Graph* graph)
 		i++;
 	}
 }
-
-int		getcolid(char *colname, color *dat, int lines)
-{
-	int	i = 0;
-
-	while (i < lines)
-	{
-		if (strcmp(colname, dat[i].col) == 0)
-			return (i);
-		i++;
-	}
-	return (-1);
-}
-
-//How to 'start'  this fun?
-//For every line...?
-
-int		goldfinder(struct Graph *graph, color *dat, int lines, int line)
-{
-	struct	AdjListNode *pCrawl;
-	int	goldid = getcolid("shiny gold", dat, lines);
-
-	pCrawl = graph->array[line].head;
-	printf("check 'line' %i\n", line);
-	while (pCrawl)
-	{
-		if (pCrawl->dest == goldid)
-			return (42);
-		pCrawl = pCrawl->next;
-		return(goldfinder(graph, dat, lines, pCrawl->dest));
-	}
-	return (0);
-}
-  
-/*
-** FUNCTIONS TO WORK WITH GRAPH BUILD W/ LINKED LISTS
-** SOURCE: GEEK FOR GEEKS
-*/
-  
-// A utility function to create a new adjacency list node 
-struct AdjListNode* newAdjListNode(int dest) 
-{ 
-    struct AdjListNode* newNode = 
-     (struct AdjListNode*) malloc(sizeof(struct AdjListNode)); 
-    newNode->dest = dest; 
-    newNode->next = NULL; 
-    return newNode; 
-} 
-  
-// A utility function that creates a graph of V vertices 
-struct Graph* createGraph(int V) 
-{ 
-    struct Graph* graph =  
-        (struct Graph*) malloc(sizeof(struct Graph)); 
-    graph->V = V; 
-  
-    // Create an array of adjacency lists.  Size of  
-    // array will be V 
-    graph->array =  
-      (struct AdjList*) malloc(V * sizeof(struct AdjList)); 
-  
-    // Initialize each adjacency list as empty by  
-    // making head as NULL 
-    int i; 
-    for (i = 0; i < V; ++i) 
-        graph->array[i].head = NULL;
-
-    return graph; 
-}
-
-// Adds an edge to an undirected graph 
-void addEdge(struct Graph* graph, int src, int dest) 
-{ 
-    // Add an edge from src to dest.  A new node is  
-    // added to the adjacency list of src.  The node 
-    // is added at the beginning 
-    struct AdjListNode* newNode = newAdjListNode(dest); 
-    newNode->next = graph->array[src].head; 
-    graph->array[src].head = newNode;
-
-/*
-** TRY TO CHANGE THE ORDER OF NODES, e.g. NEWNODE created on END
-
-	newNode->next = NULL;
-	if (graph->array[src].head == NULL)
-		graph->array[src].head = newNode;
-	else
-	{
-		while (graph->array[src].head->dest != NULL)
-			graph->array[src].head->dest = graph->array[src].head->next;
-		graph->array[src].head->dest = newNode;
-	}
-*/
-
-/* 
-** NOT NEEDED FOR THIS PROBLEM (DIRECTED GRAPH)
-    
-	// Since graph is undirected, add an edge from 
-    // dest to src also 
-    newNode = newAdjListNode(src); 
-    newNode->next = graph->array[dest].head; 
-    graph->array[dest].head = newNode; 
-*/
-} 
-  
-// A utility function to print the adjacency list  
-// representation of graph 
-void printGraph(struct Graph* graph) 
-{ 
-    int v; 
-    for (v = 0; v < graph->V; ++v) 
-    { 
-        struct AdjListNode* pCrawl = graph->array[v].head; 
-        printf("\n Adjacency list of vertex %d\n head ", v); 
-        while (pCrawl) 
-        { 
-            printf("-> %d", pCrawl->dest); 
-            pCrawl = pCrawl->next; 
-        } 
-        printf("\n"); 
-    } 
-} 
-/*
-// Driver program to test above functions 
-int main() 
-{ 
-    // create the graph given in above fugure 
-    int V = 5; 
-    struct Graph* graph = createGraph(V); 
-    addEdge(graph, 0, 1); 
-    addEdge(graph, 0, 4); 
-    addEdge(graph, 1, 2); 
-    addEdge(graph, 1, 3); 
-    addEdge(graph, 1, 4); 
-    addEdge(graph, 2, 3); 
-    addEdge(graph, 3, 4); 
-  
-    // print the adjacency list representation of the above graph 
-    printGraph(graph); 
-  
-    return 0; 
-}
-*/
