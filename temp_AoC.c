@@ -9,6 +9,7 @@
  
 typedef struct	ds
 {
+	char	str[MAXBUF];		//Need to make this variable, useful for many applications?
 	int		num;
 }			dat;
 
@@ -24,61 +25,60 @@ int		main(int argc, char **argv)
 
 	if (argc > 1)
 		ft = atoi(argv[1]);
-	if (ft == 0)
-		file = file0;
-	else if (ft == 1)
+	if (ft == 1)
 		file = file1;
+	else
+		file = file0;
 
-	printf("= INPUT CHECK ======= ========================================\n");
+	printf("= INPUT CHECK ================================================\n");
 	int		lines;
 	int		*ptparts;
-	//int		parts;
-	//ptparts = &parts;
+	int		parts;			//Parts can be different groups of lines separated by \n or sth.
 	
+	ptparts = &parts;
 	lines = getnumberoflines(file, ptparts);
 
 	printf("Number of lines: %i\n", lines);
+	printf("Number of 'parts': %i\n", parts);
 
 	printf("= ALLOC MEMORY & READING DATA ================================\n");
-	//Step 2: Allocating arrays
 
 	printf("Allocating data array...\n");
-	dat	*numss;
-	numss = calloc(lines, sizeof(dat));
-	if (numss== NULL)
+	dat	*data;
+	data = calloc(lines, sizeof(dat));
+	if (data == NULL)
 		printf("Allocation for data array failed");
 		
-	//Step 3: Reading file per MAXBUF chars
 	printf("Start reading input...\n");
-	getdata(file, lines, numss);
+	getdata(file, lines, data);
 	
 	printf("= CHECKS EXTRA ===============================================\n");
 	printf("= PRINT TEST DATA ============================================\n");
 	int	lastprint = 5;
+	int i = 0;
 
 	if (argc > 2)
 		lastprint = atoi(argv[2]);
 	
-	int i = 0;
 	while (i < lastprint)
 	{
-		printf("number %-3i = ", i);
+		printf("line %i = %s\n", i, data[i].str);
 		i++;
 	}
 
 	printf("= PT1 ANALYSIS ===============================================\n");
-
-	int		bagswithgold = 0;
-	printf("Answer part 1 = %i\n", bagswithgold);
+	int		a1 = 0;
+	
+	printf("Answer part 1 = %i\n", a1);
 		
 	printf("= PT2 ANALYSIS ===============================================\n");
+	long long		a2 = 0;
+
+	printf("Answer part 2 = %lli\n", a2);
 	
-	long long		bagsingold = 0;
-
-	printf("Answer part 2 = %lli\n", bagsingold);
-
+	//Freeing data
+	free(data);
 	printf("= END =======================================================\n");
-	free(colorlines);
 	return (0);
 }
 
@@ -103,7 +103,7 @@ int		getnumberoflines(char *file, int *ptparts)
 	{
 		lines++;
 		lpt = line;
-		while (strstr(lpt, "contain"))
+		while (strstr(lpt, "contain"))			//adjust this condition to count 'parts'
 		{
 			ppfiles++;
 			lpt = strstr(lpt, "contain") + 1;
@@ -118,20 +118,25 @@ int		getnumberoflines(char *file, int *ptparts)
 void		getdata(char *file, int lines, struct ds *dat)
 {
 	FILE	*in_file;
-	char	line[MAXBUF];
-	int		i
+	char	str[MAXBUF];
+	int		line;
+	char	*pt;
 
 	in_file = fopen(file, "r");
 	if (in_file == NULL)
 		printf("File read failed\n");
 	
-	i = 0;
-	while (fgets(line, MAXBUF, in_file) != NULL)
+	line = 0;
+	while (line < lines && fgets(str, MAXBUF, in_file) != NULL)
 	{
-		//printf("reading: %s", line);
-		pt = line;
-		numss[i].num = atoi(line);
-		i++;
+		//printf("reading: %s", str);
+		if (fgets(str, MAXBUF, in_file) == NULL)
+			printf ("fgets error for line %i\n", line);
+		
+		pt = str;
+		strncpy(dat[line].str, str, strchr(str, '\n') - str);
+		dat[line].num = atoi(str);
+		line++;
 	}
 	fclose(in_file);
 }
