@@ -130,9 +130,6 @@ void		getdata(char *file, int lines, struct ds *dat)
 	while (line < lines && fgets(str, MAXBUF, in_file) != NULL)
 	{
 		//printf("reading: %s", str);
-		if (fgets(str, MAXBUF, in_file) == NULL)
-			printf ("fgets error for line %i\n", line);
-		
 		pt = str;
 		strncpy(dat[line].str, str, strchr(str, '\n') - str);
 		dat[line].num = atoi(str);
