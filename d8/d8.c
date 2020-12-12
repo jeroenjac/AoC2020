@@ -33,7 +33,7 @@ void	init_cts(dat *data, int lines)
 int		run(dat *data, int start, int lines, int *stp)
 {
 	g_acm = 0;
-	int	pos = start;
+	int	pos = start;		//turned out it was not needed
 	int	*ptpos = &pos;
 	int	steps = 0;
 	int	nextstep = 1;
