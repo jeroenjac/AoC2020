@@ -6,7 +6,7 @@
 /*   By: jjacobs <jjacobs@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/12 14:17:43 by jjacobs       #+#    #+#                 */
-/*   Updated: 2020/12/12 14:26:20 by jjacobs       ########   odam.nl         */
+/*   Updated: 2020/12/12 15:23:18 by jjacobs       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ typedef struct	ds
 	int		val;			//	Steps to take for this instruction
 	int		dir;			//	Direction of the ship (0 - 360); 0 = North, etc
 	int		legdir;			//	Direction for this instruction (0 - 360); 0 = North, etc
+	int		wpx;
+	int		wpy;
 	int		x;				//	x after the instruction
 	int		y;				//	y after the instruction
 }			step;
@@ -99,12 +101,36 @@ int		main(int argc, char **argv)
 	//441 is correct
 		
 	printf("= PT2 ANALYSIS ===============================================\n");
-	long long		a2 = 0;
+	int		a2 = 0;
+	
+	step *data2;
+	data2 = calloc(lines, sizeof(step));
+	if (data2 == NULL)
+		printf("Allocation for data array failed");
 
-	printf("Answer part 2 = %lli\n", a2);
+	printf("Start reading input (pt 2)...\n");
+	data2[0].wpx = 10;
+	data2[0].wpy = 1;
+	getdata(file, lines, data2 + 1);
+	
+	printf("= PRINT TEST DATA (PT2) ======================================\n");
+	i = 0;
+	while (i < lastprint)
+	{
+		printf("inst %i = \"%-4s\": head = %-3i dir = %-3i. NewPos = (%i, %i)\n", i, data2[i].str, \
+		data2[i].dir, data2[i].legdir, data2[i].x, data2[i].y);
+		i++;
+	}
+	
+	fin_x = data[lines].x;
+	fin_y = data[lines].y;
+	a2 += (fin_x > 0) ? fin_x : -fin_x;
+	a2 += (fin_y > 0) ? fin_y : -fin_y;
+	printf("Answer part 2 = %i\n", a2);
 	
 	//Freeing data
 	free(data);
+	free(data2);
 	printf("= END ========================================================\n");
 	return (0);
 }
@@ -159,6 +185,9 @@ void	calc_position(step *legs, int legnum)
 	else
 		*x_new += (dir == 90) ? steps : -steps;	
 }
+
+// To do
+// Split the 2nd part off, sep for pt 1 and pt 2.
 
 void		getdata(char *file, int lines, struct ds *dat)
 {

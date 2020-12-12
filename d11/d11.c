@@ -290,7 +290,8 @@ int		main(int argc, char **argv)
 	pt2.seats = alloc_seat_mem(pt2.rows, pt2.rowlen);
 	getdata(file, pt2);
 	printgrid(pt2.seats, lastprint, data2.rowlen);
-	
+
+
 	while (updates > 0)
 	{
 		updates = 0;
