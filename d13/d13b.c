@@ -52,12 +52,17 @@ int		main(int argc, char **argv)
 	int		ft = 0;
 	struct	ds	s;
 	struct	ds	*schema = &s;
+	int		run = 1;
+	int		select[9] = {2, 7, 1, 0, 6, 5, 8, 4, 3};
 
 	printf("= GET FILE & ALLOC MEM ======================\n");
 	if (argc > 1)
 		file = argv[1];
 	else
 		file = file0;
+	if (argc > 2)
+		run = atoi(argv[2]);
+
 	schema->busIDs = getsize(file);
 	schema->busID = calloc(schema->busIDs, sizeof(int));
 	schema->busPOS = calloc(schema->busIDs, sizeof(int));
@@ -75,17 +80,21 @@ int		main(int argc, char **argv)
 	unsigned long tM = ULONG_MAX;
 	printf("num   = %li\n", 100000000000000);
 	// test t this morning	221400000000
+	// test t @codam / opt	41000000000
 	printf("max   = %lu\n", tM);
 	unsigned long tL = maxID;
 	unsigned long t0, tX;
 	int			i; // needed ??
 	int			succes = 0;
+	int			busi;
 
 	if (tL < maxPOS)
 		tL += maxPOS;
 	printf("first t0 = %lu\n", tL - maxPOS);
 	int	imax = schema->busIDs - 1;
 	//imax = 5;
+	if (run == 1)
+	{
 	while (succes == 0)
 	{
 		//check bus 0
@@ -93,18 +102,19 @@ int		main(int argc, char **argv)
 		//succes = busIDdeparts(schema->busID[0], t0);
 		// try to do the same for other buses, e.g. t1, t2, etc.
 		// best in a function, to make use of returning early
-		i = 0;
+		i = 1;
 		succes = 1;
 		while (i < imax && succes == 1)
 		{
-			tX = t0 + schema->busPOS[i];
+			busi = select[i];
+			tX = t0 + schema->busPOS[busi];
 			while (tX <= 0)
 				tX += schema->busPOS[i];
-			printf("checking bus %i for t = %lu\n", i, tX);
-			succes = busIDdeparts(schema->busID[i], tX);
+			printf("checking bus %i for t = %lu\n", busi, tX);
+			succes = busIDdeparts(schema->busID[busi], tX);
+			if (succes == 1)
+				maxID = maxID * schema->busID[select[i]];
 			i++;
-			if (i == nPOS)
-				i++;
 		}
 		if (succes != 1)
 			tL += maxID;
@@ -112,6 +122,7 @@ int		main(int argc, char **argv)
 		if (t0 % 100000 == 0)
 			printf("Testing for t = %lu...\n", t0);
 		*/
+	}
 	}
 	printf("At t0 = %lu (and +1 ..) all buses depart\n", t0);
 	//For multiples of this T, get T' on which other buses should depart
@@ -203,8 +214,8 @@ void	print_test(sched schema)
 	int		i = 0;
 	
 	printf("= PRINT INPUT ===============================\n");
-	printf("%i buses & %i with ID\n", schema.buses, schema.busIDs);
-	while (i < schema.busIDs)
+	printf("%i buses & %i with ID\n", schema.buses, schema.busIDs - 1);
+	while (i < schema.busIDs - 1)
 	{
 		printf("Bus %-2i on pos %-2i has ID %-2i\n", i, \
 		schema.busPOS[i], schema.busID[i]);
