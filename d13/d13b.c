@@ -28,9 +28,10 @@ int			busIDdeparts(int ID, unsigned long time)
 void		findMaxID(sched s, int *maxID, int *maxPOS, int *maxi)
 {
 	int		i = 0;
-	
-	*maxPOS = s.busID[i];
+
+	*maxPOS = s.busPOS[i];
 	*maxID = s.busID[*maxPOS];
+	*maxi = i;
 	while (i < s.busIDs)
 	{
 		if (s.busID[i] > *maxID)
@@ -67,12 +68,13 @@ int		main(int argc, char **argv)
 	printf("= START ANALYSIS ============================\n");
 	int		maxID;
 	int		maxPOS;
-	int		i_maxID;
-	findMaxID(*schema, &maxID, &maxPOS, &i_maxID);
+	int		nPOS;
+	findMaxID(*schema, &maxID, &maxPOS, &nPOS);
 	printf("Highest busID is %i on pos %i\n", maxID, maxPOS);
 	//Find at which T this bus should depart ~ POS
 	unsigned long tM = ULONG_MAX;
 	printf("num   = %li\n", 100000000000000);
+	// test t this morning	221400000000
 	printf("max   = %lu\n", tM);
 	unsigned long tL = maxID;
 	unsigned long t0, tX;
@@ -82,7 +84,7 @@ int		main(int argc, char **argv)
 	if (tL < maxPOS)
 		tL += maxPOS;
 	printf("first t0 = %lu\n", tL - maxPOS);
-	int	imax = schema->busIDs;
+	int	imax = schema->busIDs - 1;
 	//imax = 5;
 	while (succes == 0)
 	{
@@ -96,10 +98,12 @@ int		main(int argc, char **argv)
 		while (i < imax && succes == 1)
 		{
 			tX = t0 + schema->busPOS[i];
+			while (tX <= 0)
+				tX += schema->busPOS[i];
 			printf("checking bus %i for t = %lu\n", i, tX);
 			succes = busIDdeparts(schema->busID[i], tX);
 			i++;
-			if (i == i_maxID)
+			if (i == nPOS)
 				i++;
 		}
 		if (succes != 1)
@@ -137,10 +141,13 @@ int			getsize(char *file)
 	while (str[i] != '\0')
 	{	
 		if (isdigit(str[i]))
+		{
 			busIDs++;
-		while (isdigit(str[i]))
+			while (isdigit(str[i]))
+				i++;
+		}
+		else
 			i++;
-		i++;
 	}
 	fclose(in_file);
 	return (busIDs);
@@ -197,7 +204,7 @@ void	print_test(sched schema)
 	
 	printf("= PRINT INPUT ===============================\n");
 	printf("%i buses & %i with ID\n", schema.buses, schema.busIDs);
-	while (i < schema.busIDs - 1)
+	while (i < schema.busIDs)
 	{
 		printf("Bus %-2i on pos %-2i has ID %-2i\n", i, \
 		schema.busPOS[i], schema.busID[i]);
