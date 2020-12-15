@@ -14,10 +14,10 @@ typedef	struct	pos
 int		arrlen(int *arr);
 void	printarr(int *arr);
 void	printturns(int *allturns, int from, int to);
-void	fillpos(pos *posit, int num, int t);
+void	printlookup(pos *pos, int s, int e);
+void	fillpos(pos *posit, int turn);
 int		guess_age(int *tur, int t);
 int		guess_fast(int *tur, int t, pos *posit);
-void	printlookup(pos *pos, int s, int e);
 
 int	main(int argc, char **argv)
 {
@@ -84,7 +84,7 @@ int	main(int argc, char **argv)
 		else
 			//allturns[t] = guess_age(allturns, t);
 			allturns[t] = guess_fast(allturns, t, positions);
-		fillpos(positions, allturns[t], t);
+		fillpos(&positions[allturns[t]], t);
 		t++;
 	}
 	printturns(allturns, 0, printlim);
@@ -101,7 +101,7 @@ int	main(int argc, char **argv)
 	while (t < turns2)
 	{
 		allturns[t] = guess_fast(allturns, t, positions);
-		fillpos(positions, allturns[t], t);
+		fillpos(&positions[allturns[t]], t);
 		t++;
 	}
 	printturns(allturns, turns, turns + printlim + 1);
@@ -110,18 +110,18 @@ int	main(int argc, char **argv)
 	printarr(arr);
 }
 
-void fillpos(pos *posit, int num, int t)
+void fillpos(pos *posit, int turn)
 {
-	if (posit[num].called == 0)
+	if (posit->called == 0)
 	{
-		posit[num].prev1 = t;
-		posit[num].called = 1;
+		posit->prev1 = turn;
+		posit->called = 1;
 	}
 	else 
 	{
-		posit[num].prev2 = posit[num].prev1;
-		posit[num].prev1 = t;
-		posit[num].called = 2;
+		posit->prev2 = posit->prev1;
+		posit->prev1 = turn;
+		posit->called = 2;
 	}
 }
 
