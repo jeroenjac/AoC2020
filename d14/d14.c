@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
+#include <limits.h>
 
 typedef struct ds
 {
@@ -11,26 +13,31 @@ typedef struct ds
 }			inst;
 
 int		*get_bits(long n, int bitswanted);
-int		*makemask36(char *mask, int x_bit);
+//int		*makemask36(char *mask, int x_bit);
 int		*applymasktobits(char *mask, int *bits);
 void	print_bits(int	*bits);
+long	bits_to_int(int *bits);
 
-int	main(void)
+int	main(int argc, char **argv)
 {
+	int		memslots = 100000;
+	long	*memory;
+
+	memory = calloc(memslots, sizeof(*memory));
+	if (memory == NULL)
+		printf("Calloc for memory failed\n");
+	if (argc < 2)
+		printf("No input\n");
+	
 	inst	*test;
 	int		testsize = 5;
-	int		*memory;
-
 	test = calloc(testsize, sizeof(inst));
 	if (test == NULL)
 		printf("Calloc for test failed\n");
-	memory = calloc(60, sizeof(*memory));
-	if (memory == NULL)
-		printf("Calloc for memory failed\n");
-
+	
 	//test data
-	test[0].mask = strdup("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX01");
-	test[1].newval = 101;
+	test[0].mask = strdup("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X");
+	test[1].newval = 0;
 	
 	//first input data - manual
 	strcpy(test[2].type, "mask");
@@ -51,26 +58,78 @@ int	main(void)
 	int	*aftermask = applymasktobits(test[0].mask, bits);
 	print_bits(aftermask);
 	printf("Convert new bits back to int\n");
-	//TBD
-
+	printf("2^36	 = %li\n", (long int)pow(2, 36));
+	printf("long_max = %li\n", LONG_MAX);
+	printf("Int before = %li\n", bits_to_int(bits));
+	printf("Int after =  %li\n", bits_to_int(aftermask));
 	free(bits);
 	free(aftermask);
+
+	//Part 1
+	char	*filename = strdup(argv[1]);;
+	FILE	*file = fopen(filename, "r");
+	char	line[50];
+	char	*pt;
+	char	*mask;
+	int		mempos = 0;
+	int		num;
+	int		*num_in_bits;
+	int		*mask_result;
+	long	mask_result_to_int;
+	
+	mask = strndup("aaaaa", 2);
+	while (fgets(line, sizeof(line), file) != NULL)
+	{
+		pt = line;
+		printf("Reading: %s", pt);
+		if (pt[1] == 'a')
+		{
+			free(mask);
+			mask = strndup(pt + 7, 36);
+		}
+		else if (pt[1] == 'e')
+		{
+			mempos = atoi(pt + 4);
+			pt = strchr(pt, '=') + 2; 
+			num = atoi(pt);
+			printf("Num = %i\n", num);
+			num_in_bits = get_bits(num, 36);
+			print_bits(num_in_bits);
+			mask_result = applymasktobits(mask, num_in_bits);
+			print_bits(mask_result);
+			mask_result_to_int = bits_to_int(mask_result);
+			memory[mempos] = mask_result_to_int;
+			free(num_in_bits);
+			free(mask_result);
+		}
+		else
+			printf("Error line input\n");
+		printf("mask = %s\n", mask);
+		printf("mem[%i] = %li\n", mempos, mask_result_to_int);
+		bzero(line, 50);
+	}
+	fclose(file);
+	
+	long sumsum = 0;
+	mempos = 0;
+	while (mempos < memslots)
+	{
+		sumsum += memory[mempos];
+		mempos++;
+	}
+	printf("Sum of memory = %li\n", sumsum);
+
 
 	return (0);
 }
 
-// get lines --> create struct instructions
-//	type mask/mem (str)
-//	mask value (str)
-//	address(int)
-//	newvalue(int)
-// get mem instr & put in struct
-// get mask instr & put in struct
-// get max mem address -> define mem struct/int?
-//
-// interpretation...
-//
+/*
+** PART2
+**	adjust write mask function - leave X
+**	while reading lines, loop over all 2^(number of X) - apply X variations 0 / 1
+**	for every variation, write value to mem
 
+*/
 
 int		*get_bits(long n, int bitswanted)
 {
@@ -112,4 +171,17 @@ void	print_bits(int	*bits)
 		printf("%d", bits[i]);
 	}
 	printf("\n");
+}
+
+long	bits_to_int(int *bits)
+{
+	long	number = 0;
+	int		bitnum = 35;
+
+	while (bitnum >= 0)
+	{
+		number += bits[bitnum] * pow(2, bitnum);
+		bitnum--;
+	}
+	return (number);
 }

@@ -1,0 +1,3027 @@
+read line: 9 + 3 * (9 * (9 + 3 + 5 * 3) * 5 * 3 * 5)
+TEST: first digit * 10 = 90
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 51
+ENDOF FUNCTION: i = 31 / sum = 34425
+ENDOF FUNCTION: i = 41 / sum = 413100
+Sum of line = 413100 (chars parsed: 41)
+>>>> read line 1  : 9 + 3 * (9 * (9 + 3 + 5 * 3) * 5 * 3 * 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 51
+ENDOF FUNCTION: i = 31 / sum = 34425
+ENDOF FUNCTION: i = 41 / sum = 413100
+>>>> read line 2  : 5 + 9 * 7 + 5 + 7 + (6 * (4 * 9 + 5 * 7 + 7 + 7) * (7 * 7 + 9 * 5) * 6 + 4 * 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 301
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 290
+ENDOF FUNCTION: i = 57 / sum = 28281996
+ENDOF FUNCTION: i = 79 / sum = 28282106
+>>>> read line 3  : 3 + (5 * 3 + 5 + 5 * 2 + 2) * 8 * (7 * 7 * 7 * 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 52
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 686
+ENDOF FUNCTION: i = 49 / sum = 301840
+>>>> read line 4  : (7 * (4 + 8 + 6)) + 5 + (5 * 6 + 6 + (6 * 7 + 7 + 3 * 6 + 3) * 5 * (5 + 6 * 8)) + 5 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 18
+ENDOF FUNCTION: i = 15 / sum = 126
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 315
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 88
+ENDOF FUNCTION: i = 53 / sum = 154440
+ENDOF FUNCTION: i = 87 / sum = 154580
+>>>> read line 5  : (5 + 2 * (3 + 5 * 3 + 7 + 6 * 8) * 9 + 6) + (7 * 9 + 3 * 2 + 4) * 2 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 296
+ENDOF FUNCTION: i = 39 / sum = 18654
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 136
+ENDOF FUNCTION: i = 71 / sum = 225480
+>>>> read line 6  : 5 + (4 + 7) + (5 * 5 + (5 + 2 * 5 + 4) * (5 * 3))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 39
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 15
+ENDOF FUNCTION: i = 33 / sum = 960
+ENDOF FUNCTION: i = 49 / sum = 976
+>>>> read line 7  : 5 + 5 + 9 + (9 + 9 * 3 + 2 + 4 + 9) + 4 * (8 + 2 + 4 * 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 69
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 70
+ENDOF FUNCTION: i = 57 / sum = 6440
+>>>> read line 8  : (7 + 4) + ((8 + 7 * 5 * 6) + 5 + 2 * 4) + 6 + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 450
+ENDOF FUNCTION: i = 27 / sum = 1828
+ENDOF FUNCTION: i = 47 / sum = 1848
+>>>> read line 9  : 2 * (3 * 7 * 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 105
+ENDOF FUNCTION: i = 15 / sum = 210
+>>>> read line 10 : 4 + 9 + 3 * 3 + (8 + 6) + (9 + 6 + (2 + 2 + 6) * 8 + 3 + 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 10
+ENDOF FUNCTION: i = 31 / sum = 206
+ENDOF FUNCTION: i = 59 / sum = 268
+>>>> read line 11 : (4 + 2) * 2 * 7 + 7 * 7 + (4 * 2 + 5 + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 21
+ENDOF FUNCTION: i = 41 / sum = 658
+>>>> read line 12 : 6 * 7 * 6 + 4 * (3 * 9 + 8 + 8) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 43
+ENDOF FUNCTION: i = 35 / sum = 22016
+>>>> read line 13 : 3 + 3 * 6 + ((3 * 3 + 7 + 6 * 9 * 4) + 9 + 4 + (6 * 5 + 5 * 4) * 7 + 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 792
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 140
+ENDOF FUNCTION: i = 57 / sum = 6617
+ENDOF FUNCTION: i = 71 / sum = 6653
+>>>> read line 14 : (6 + 4 + (6 + 4) * 4 + 3 * (9 * 6)) * 7 * 3 * 6 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 54
+ENDOF FUNCTION: i = 33 / sum = 4482
+ENDOF FUNCTION: i = 51 / sum = 564738
+>>>> read line 15 : (4 * 7) * 9 + (7 + 2) + 5 * 4 + (7 * 8 * 9 * 3 + (9 + 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 28
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 23 / sum = 1530
+ENDOF FUNCTION: i = 57 / sum = 2594
+>>>> read line 16 : ((4 * 6) * 8) * 8 + 5 * ((9 + 6) + 3 + 6 * 5 * 6 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 24
+ENDOF FUNCTION: i = 11 / sum = 192
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 15
+ENDOF FUNCTION: i = 27 / sum = 727
+ENDOF FUNCTION: i = 53 / sum = 1120307
+>>>> read line 17 : ((4 * 4) + 2 + 8) * 2 + 7 + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+ENDOF FUNCTION: i = 15 / sum = 26
+ENDOF FUNCTION: i = 29 / sum = 62
+>>>> read line 18 : 7 * (6 * 5 * 4 + 9 * (4 * 3 * 6 + 6 + 6 + 5)) + 8 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 89
+ENDOF FUNCTION: i = 39 / sum = 11481
+ENDOF FUNCTION: i = 53 / sum = 401875
+>>>> read line 19 : 5 * 9 * 3 + (5 * 8 * 3 * 9 * 5) * (7 + (3 + 3 * 4)) * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 5400
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 24
+ENDOF FUNCTION: i = 15 / sum = 31
+ENDOF FUNCTION: i = 55 / sum = 1544265
+>>>> read line 20 : 9 + 6 * 5 + ((5 * 5 * 3) + 3 + 2 * 8 + 2 + 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 75
+ENDOF FUNCTION: i = 31 / sum = 644
+ENDOF FUNCTION: i = 45 / sum = 719
+>>>> read line 21 : (3 * 2 * (7 + 9 + 2)) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 18
+ENDOF FUNCTION: i = 19 / sum = 108
+ENDOF FUNCTION: i = 25 / sum = 432
+>>>> read line 22 : (9 * 4 + 9 + 2 * 4) * 2 * 3 * (4 + 4 * 8) + 5 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 188
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 64
+ENDOF FUNCTION: i = 49 / sum = 577576
+>>>> read line 23 : 8 * (2 * 3 * 3 * 5 * 3 + 5) * 8 * (7 + (7 * 7 + 3 + 8) * 7 * 2) * ((3 + 3) * 7 + 9 + 4 + (2 + 7 + 2 + 6 * 7 * 9) * (9 * 3 * 5 + 9 + 7)) + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 275
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 60
+ENDOF FUNCTION: i = 27 / sum = 938
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1071
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 151
+ENDOF FUNCTION: i = 67 / sum = 170026
+ENDOF FUNCTION: i = 139 / sum = 2806925228802
+>>>> read line 24 : (8 * 4 + 3 + 2 * 6) + 3 + 6 + 4 + 8 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 222
+ENDOF FUNCTION: i = 39 / sum = 245
+>>>> read line 25 : 4 + (9 * 2 * 8) * ((3 + 5) * (6 * 4 + 5 * 9 + 7) * 7 + 9 + 8 + 9) + (2 + 5) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 144
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 268
+ENDOF FUNCTION: i = 45 / sum = 15034
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 7
+ENDOF FUNCTION: i = 79 / sum = 2225048
+>>>> read line 26 : 8 * (5 + (2 * 2 + 7 + 9 + 9) * 8 * (4 * 6 * 5) + 7 * 9) + 8 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 29
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 120
+ENDOF FUNCTION: i = 49 / sum = 293823
+ENDOF FUNCTION: i = 63 / sum = 2350601
+>>>> read line 27 : 7 + (3 * 3 + 5 * 9 * 4) * (2 * 7 * (6 + 4) + 7 * 6 + 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 504
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 27 / sum = 887
+ENDOF FUNCTION: i = 55 / sum = 453257
+>>>> read line 28 : (9 * 3 * 6 * 7 * (9 + 6 * 8 + 9 * 8) * 5) + 3 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1032
+ENDOF FUNCTION: i = 39 / sum = 5851440
+ENDOF FUNCTION: i = 49 / sum = 35108658
+>>>> read line 29 : ((5 * 7 * 4 * 4 + 2 * 7) * 8 * 5) + 3 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 3934
+ENDOF FUNCTION: i = 31 / sum = 157360
+ENDOF FUNCTION: i = 41 / sum = 629452
+>>>> read line 30 : 7 * (6 * (7 + 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+ENDOF FUNCTION: i = 11 / sum = 96
+ENDOF FUNCTION: i = 17 / sum = 672
+>>>> read line 31 : 3 * 3 * 6 + (9 + 9 * 6 * 2 + 2) + (6 * 7 + (4 + 4) * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 218
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 19 / sum = 400
+ENDOF FUNCTION: i = 55 / sum = 672
+>>>> read line 32 : 2 + (3 + (4 * 3 * 8 + 4 * 9) + (4 * 6 + 5 + 5 + 5)) * 7 + 2 + 2 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 900
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 39
+ENDOF FUNCTION: i = 45 / sum = 942
+ENDOF FUNCTION: i = 67 / sum = 52896
+>>>> read line 33 : (7 + 7) * 8 * 3 + 3 * (7 * 9 * 3 * 2 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 385
+ENDOF FUNCTION: i = 41 / sum = 130515
+>>>> read line 34 : (4 * 6) + (6 + 5) * 8 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 24
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+ENDOF FUNCTION: i = 25 / sum = 289
+>>>> read line 35 : (6 + 9 + 8 + (6 * 5 + 9) * 5) + (4 + 8 + 7 + 2 * 9) + 7 + ((9 + 6 * 9) * 7) * 3 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 39
+ENDOF FUNCTION: i = 27 / sum = 310
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 189
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 135
+ENDOF FUNCTION: i = 15 / sum = 945
+ENDOF FUNCTION: i = 83 / sum = 26118
+>>>> read line 36 : (3 * 7 * 3) + (2 * 3 + 7 + 5) + 8 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 63
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 18
+ENDOF FUNCTION: i = 37 / sum = 356
+>>>> read line 37 : 2 + (6 * 9 + 7 + (2 * 5 + 6) * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+ENDOF FUNCTION: i = 27 / sum = 616
+ENDOF FUNCTION: i = 33 / sum = 618
+>>>> read line 38 : ((5 + 2 * 8 * 7 + 4) * 9) * (4 * 3 + 4 + 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 396
+ENDOF FUNCTION: i = 23 / sum = 3564
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 25
+ENDOF FUNCTION: i = 43 / sum = 89100
+>>>> read line 39 : 8 * 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 48
+>>>> read line 40 : (2 + (6 * 9 * 4 + 2 * 8 + 4) * 2) + 3 + 5 + (7 + (6 + 2) + 4 * 3 * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1748
+ENDOF FUNCTION: i = 31 / sum = 3500
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 23 / sum = 342
+ENDOF FUNCTION: i = 69 / sum = 3850
+>>>> read line 41 : 4 + 8 + (2 + 6) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 19 / sum = 40
+>>>> read line 42 : 4 + 4 * 2
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+>>>> read line 43 : 4 + 7 + 5
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+>>>> read line 44 : ((4 + 8 * 6 + 3 + 8) + 8) * 3 * 4 * 5 * 7 * (9 + 9 + 4 * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 83
+ENDOF FUNCTION: i = 23 / sum = 91
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 176
+ENDOF FUNCTION: i = 59 / sum = 6726720
+>>>> read line 45 : 9 * 8 * 6 + (7 * 7 * 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 245
+ENDOF FUNCTION: i = 23 / sum = 677
+>>>> read line 46 : 5 * 5 * (4 + 7 * 5 * 8 * 2 * 8) + 3 * (7 * 4 + 4 + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 7040
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 38
+ENDOF FUNCTION: i = 53 / sum = 6688114
+>>>> read line 47 : (3 * 5 * 8 + 7 * 5 + 8) * 3 + (8 + 6 + 8) * 2 + (7 + 5 + 5 + (3 * 2) + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 643
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 22
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 6
+ENDOF FUNCTION: i = 23 / sum = 29
+ENDOF FUNCTION: i = 73 / sum = 3931
+>>>> read line 48 : (7 + 7 + 9 + 9) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 32
+ENDOF FUNCTION: i = 19 / sum = 41
+>>>> read line 49 : 3 * 9 * (2 + (5 * 2 * 3 + 3) * 8 + 3 * 8 + 6) * ((3 * 9) * (7 + 3 * 8 + 5 * 6 * 5) + 6 * 4) + 4 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 33
+ENDOF FUNCTION: i = 35 / sum = 2270
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 27
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2550
+ENDOF FUNCTION: i = 41 / sum = 275424
+ENDOF FUNCTION: i = 99 / sum = 67522947856
+>>>> read line 50 : (3 + 3 * 7 + 4) * 2 + (8 * 2 * 6 * (8 * 3 + 9 + 7 + 6)) * 9 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 46
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 46
+ENDOF FUNCTION: i = 31 / sum = 4416
+ENDOF FUNCTION: i = 63 / sum = 40581
+>>>> read line 51 : 3 + (3 + 9 * 4 + 3 * (4 * 6 * 5 * 8 * 5 + 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 4809
+ENDOF FUNCTION: i = 39 / sum = 245259
+ENDOF FUNCTION: i = 45 / sum = 245262
+>>>> read line 52 : (5 + 3 + 7 * 7) * 7 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 105
+ENDOF FUNCTION: i = 23 / sum = 744
+>>>> read line 53 : 9 + 5 + 5 * (5 + 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 19 / sum = 152
+>>>> read line 54 : (5 + 7 + 4 + 4 + 8 + 5) + (9 + 3 * 2 + 2 + 3) * 2 * (2 * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 33
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 29
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+ENDOF FUNCTION: i = 59 / sum = 1984
+>>>> read line 55 : 8 * 9 + 3 + (2 * (5 + 2 * 5 + 6 * 7) + 4 + 4) + ((3 * 6 * 7) * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 287
+ENDOF FUNCTION: i = 31 / sum = 582
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 126
+ENDOF FUNCTION: i = 15 / sum = 378
+ENDOF FUNCTION: i = 65 / sum = 1035
+>>>> read line 56 : 4 + ((7 + 2 + 6 + 6) * 4) + 5 * 8 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 21
+ENDOF FUNCTION: i = 19 / sum = 84
+ENDOF FUNCTION: i = 37 / sum = 2976
+>>>> read line 57 : 7 * 3 + (3 + 2 + (3 * 6 + 3 + 6 + 6 + 7) * 6 + 4 + 3) + 4 + (2 + 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 40
+ENDOF FUNCTION: i = 43 / sum = 277
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 5
+ENDOF FUNCTION: i = 67 / sum = 307
+>>>> read line 58 : 3 * ((4 + 7) + 3 + 2 + 5 * (7 + 6 * 7 * 3 + 2 * 4) * 3) + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1100
+ENDOF FUNCTION: i = 49 / sum = 69300
+ENDOF FUNCTION: i = 59 / sum = 207908
+>>>> read line 59 : 5 + 5 * 5 + (9 + (7 + 4 * 5 * 9) * 4) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 495
+ENDOF FUNCTION: i = 23 / sum = 2016
+ENDOF FUNCTION: i = 41 / sum = 16528
+>>>> read line 60 : 5 + 3 * (6 + 3 * 6 + 6) * 3 * (4 + 9 * (3 + 3 * 4 * 8 * 3 * 6) + 2) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 60
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 3456
+ENDOF FUNCTION: i = 35 / sum = 44930
+ENDOF FUNCTION: i = 71 / sum = 64699204
+>>>> read line 61 : ((5 + 8) * 6 + 5 * (9 + 6 * 9)) + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 135
+ENDOF FUNCTION: i = 29 / sum = 11205
+ENDOF FUNCTION: i = 35 / sum = 11207
+>>>> read line 62 : 3 + 5 + 6 * 2 * 2 + 2
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 58
+>>>> read line 63 : 3 * (3 + (9 * 8 + 6) * 6 * (6 * 9 * 9 + 3 + 7 * 6) + 5 * (2 * 9)) * 4 * (8 * (5 * 5)) + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 78
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2976
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 59 / sum = 26034138
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 25
+ENDOF FUNCTION: i = 11 / sum = 200
+ENDOF FUNCTION: i = 89 / sum = 62481931206
+>>>> read line 64 : (5 * 6 + 2 + 8 * 3 + 8) + (2 * 6 + (3 * 3 * 2) * 8 + 3 + 3) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 128
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 18
+ENDOF FUNCTION: i = 31 / sum = 246
+ENDOF FUNCTION: i = 63 / sum = 378
+>>>> read line 65 : 6 * (4 + 8 + 8 * 2 * 3) * 3 * 6 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 120
+ENDOF FUNCTION: i = 35 / sum = 51840
+>>>> read line 66 : 7 + (6 + 2) * (9 * (8 + 8 + 8 * 2) * (3 + 6 + 6 * 7 + 5)) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 48
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 110
+ENDOF FUNCTION: i = 41 / sum = 47520
+ENDOF FUNCTION: i = 61 / sum = 4989600
+>>>> read line 67 : 7 + 2 * 6 + 8 * 9
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 558
+>>>> read line 68 : (7 * 2 + (2 + 4 * 8 * 8) + 3) + 4 * 8 + 5 + 2 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 384
+ENDOF FUNCTION: i = 27 / sum = 401
+ENDOF FUNCTION: i = 49 / sum = 3254
+>>>> read line 69 : 9 + 9 * 6 + 8 + (7 * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 21
+ENDOF FUNCTION: i = 23 / sum = 137
+>>>> read line 70 : 4 * (3 + (2 * 8 * 8 + 7 * 4) * 5 + 7 + (4 * 6 * 5) * 6) + 8 + 5 + (5 + (3 + 9 + 5 * 4 + 6)) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 540
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 120
+ENDOF FUNCTION: i = 49 / sum = 17052
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 74
+ENDOF FUNCTION: i = 23 / sum = 79
+ENDOF FUNCTION: i = 95 / sum = 409800
+>>>> read line 71 : 5 * (5 + 9 * 6 + (9 + 8) * 8) + (6 * 4 + (7 * 7 + 3) + (8 + 3 + 8 * 9 + 5 * 5)) * 7 + (7 * 4 * 9 * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 17
+ENDOF FUNCTION: i = 23 / sum = 808
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 52
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 880
+ENDOF FUNCTION: i = 45 / sum = 956
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 1512
+ENDOF FUNCTION: i = 101 / sum = 36484
+>>>> read line 72 : 5 + 3 + 9 + 5 + 7
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 29
+>>>> read line 73 : 6 * 2 * (2 + (7 + 5 + 3 + 3) * 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 18
+ENDOF FUNCTION: i = 23 / sum = 140
+ENDOF FUNCTION: i = 33 / sum = 1680
+>>>> read line 74 : (2 + 4 * 8 * 3 + 8 * 4) * 4 + 9 * (6 + 2) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 608
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 45 / sum = 19531
+>>>> read line 75 : 7 + 8 * (3 * (5 * 3 + 3 * 9 + 4 + 3) + 9 * 7 + (7 * 5 * 2 * 7) * 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 169
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 490
+ENDOF FUNCTION: i = 57 / sum = 36918
+ENDOF FUNCTION: i = 67 / sum = 553770
+>>>> read line 76 : 3 + (5 * (7 + 6 + 4) * (8 + 3 + 2 + 3 + 5) * (7 + 8 * 6 + 2)) * 5 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 17
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 21
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 92
+ENDOF FUNCTION: i = 55 / sum = 164220
+ENDOF FUNCTION: i = 69 / sum = 821122
+>>>> read line 77 : 8 * 6 + 9 * (9 + (3 * 4 * 5 + 6 * 5))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 330
+ENDOF FUNCTION: i = 23 / sum = 339
+ENDOF FUNCTION: i = 37 / sum = 19323
+>>>> read line 78 : 6 * 2 * 2 + (5 * 9 * 5 + 6 * 9 + 3) + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2082
+ENDOF FUNCTION: i = 39 / sum = 2112
+>>>> read line 79 : 4 + (5 * (2 + 3 + 4 * 5 * 5) * 7 + 2 * (6 * 6 * 2) * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 225
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 72
+ENDOF FUNCTION: i = 49 / sum = 1701432
+ENDOF FUNCTION: i = 55 / sum = 1701436
+>>>> read line 80 : 9 * 3 + (8 * 5 + 6 + 3 + 5 + 9) * 4 * 4 * ((9 * 8 * 4) * 8 + 7 * 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 63
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 288
+ENDOF FUNCTION: i = 23 / sum = 11555
+ENDOF FUNCTION: i = 67 / sum = 16639200
+>>>> read line 81 : (7 * (6 + 5) * 6 * (9 + 7 * 5 * 2 + 3 * 8) * 8 + 2) * (9 + 9 * (5 * 8 * 7) * 7) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1304
+ENDOF FUNCTION: i = 49 / sum = 4819586
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 280
+ENDOF FUNCTION: i = 23 / sum = 35280
+ENDOF FUNCTION: i = 83 / sum = 680139976320
+>>>> read line 82 : 2 * 6 + (6 * 5 * 7 * 4) * 7 + (2 * 9 * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 840
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 54
+ENDOF FUNCTION: i = 41 / sum = 6018
+>>>> read line 83 : 7 + (3 * 7) + (4 * 3 * 9 * (4 + 8 + 2 + 2 + 8 * 6)) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 21
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 144
+ENDOF FUNCTION: i = 35 / sum = 15552
+ENDOF FUNCTION: i = 55 / sum = 15584
+>>>> read line 84 : 9 * 2 * 5 * 5
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 450
+>>>> read line 85 : (4 * (9 * 5 * 7 + 7 + 2 + 5) * 7) + 6 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 329
+ENDOF FUNCTION: i = 31 / sum = 9212
+ENDOF FUNCTION: i = 41 / sum = 27654
+>>>> read line 86 : ((5 + 7 + 3 * 6 * 2) + 6 + 7 + (2 + 5 + 7 + 8 + 4 * 4) + 4 + 8) + (3 + 5 * 7 * 3 + 2) + 7 + 3 + 3 * (5 * 6 * 7 * 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 180
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 104
+ENDOF FUNCTION: i = 61 / sum = 309
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 170
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 1050
+ENDOF FUNCTION: i = 115 / sum = 516600
+>>>> read line 87 : 9 + 4 * 9 + (5 * (8 + 8 * 9 + 6 * 7) * 5 + 8 + 9) + 5 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1050
+ENDOF FUNCTION: i = 35 / sum = 26267
+ENDOF FUNCTION: i = 57 / sum = 26396
+>>>> read line 88 : (6 + 8 * 9 * 9 + (2 + 9 + 8) + 3) + 4 + (2 * 7) * 2 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 19
+ENDOF FUNCTION: i = 31 / sum = 1156
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+ENDOF FUNCTION: i = 55 / sum = 2353
+>>>> read line 89 : 9 * 7 * 4 * (7 + 4 + 7 * 8 * 4) + 9 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 576
+ENDOF FUNCTION: i = 39 / sum = 145166
+>>>> read line 90 : 8 * 3 * 5 + (5 + 7 * (2 + 7 * 5) * 9 + 2 + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 45
+ENDOF FUNCTION: i = 31 / sum = 4870
+ENDOF FUNCTION: i = 45 / sum = 4990
+>>>> read line 91 : (8 + (5 + 5) * 9 * 9 + 7 * 5) + 3 * 4 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 27 / sum = 7325
+ENDOF FUNCTION: i = 41 / sum = 117248
+>>>> read line 92 : 8 + 3 + 2 + 7 + 8 * 2
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 56
+>>>> read line 93 : 7 * 4 + 8 * ((6 * 5 + 7) * 5 * 9 * 3 + 6) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 37
+ENDOF FUNCTION: i = 27 / sum = 5001
+ENDOF FUNCTION: i = 45 / sum = 180045
+>>>> read line 94 : (3 + 9) * ((6 + 5) + 9) + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 12
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+ENDOF FUNCTION: i = 11 / sum = 20
+ENDOF FUNCTION: i = 27 / sum = 247
+>>>> read line 95 : 9 * 3 * 3 + 7 * (9 + 8 + 9 * 4 + 9 * 7) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 791
+ENDOF FUNCTION: i = 43 / sum = 417648
+>>>> read line 96 : ((5 + 5 + 6 + 9) * 2 + (3 + 4 * 4 + 2 + 9) * 5 + 3 + 3) + 6 * (3 + (2 * 9 + 5 * 2 * 7) * 5 + 8) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 25
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 39
+ENDOF FUNCTION: i = 53 / sum = 451
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 322
+ENDOF FUNCTION: i = 31 / sum = 1633
+ENDOF FUNCTION: i = 99 / sum = 5970248
+>>>> read line 97 : 2 + 3 + ((7 + 5 * 9 + 3 * 5) + 8 + 4) * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 555
+ENDOF FUNCTION: i = 27 / sum = 567
+ENDOF FUNCTION: i = 41 / sum = 2860
+>>>> read line 98 : (5 + (6 * 3 * 5 + 5) + 2 + 3 + 5 + 2) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 95
+ENDOF FUNCTION: i = 35 / sum = 112
+ENDOF FUNCTION: i = 41 / sum = 116
+>>>> read line 99 : 7 + (5 * (3 * 2 * 7 * 4 + 3) + (2 + 9 * 6 + 3 + 3) + 3) * ((6 * 7 + 2 * 4 * 2 + 2) + 9 + 9 * 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 171
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 72
+ENDOF FUNCTION: i = 49 / sum = 930
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 354
+ENDOF FUNCTION: i = 35 / sum = 2604
+ENDOF FUNCTION: i = 95 / sum = 2439948
+>>>> read line 100: 3 * (4 + (7 * 2 + 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 23
+ENDOF FUNCTION: i = 15 / sum = 27
+ENDOF FUNCTION: i = 21 / sum = 81
+>>>> read line 101: 8 * 9 + ((2 + 2 * 2 + 2 + 9 * 8) + 3 * 2 * 7) + 5 * 2 * (9 + 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 152
+ENDOF FUNCTION: i = 35 / sum = 2170
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 63 / sum = 80892
+>>>> read line 102: 2 * 2 * 9 + 4 * 7
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 280
+>>>> read line 103: (6 + 3 + 5 + 5 + (8 * 5) + 7) * 4 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 40
+ENDOF FUNCTION: i = 27 / sum = 66
+ENDOF FUNCTION: i = 37 / sum = 2112
+>>>> read line 104: 6 * (5 + 5) * 6 * 4 + 3 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 27 / sum = 4329
+>>>> read line 105: 9 * (8 + 9 + 9) + 6 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 26
+ENDOF FUNCTION: i = 23 / sum = 249
+>>>> read line 106: 7 + 9
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+>>>> read line 107: 4 + (5 + 3 + 3 * 7 * 4 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 315
+ENDOF FUNCTION: i = 27 / sum = 319
+>>>> read line 108: 2 * (7 * 2 + 8) + 6 * 4 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 22
+ENDOF FUNCTION: i = 27 / sum = 1200
+>>>> read line 109: (4 + 9 + 6) * 6 * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 19
+ENDOF FUNCTION: i = 19 / sum = 1026
+>>>> read line 110: 4 * (4 * 9 + 6 * 9 * 7 + 4) * 9 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2650
+ENDOF FUNCTION: i = 35 / sum = 95405
+>>>> read line 111: (4 + 4 + 7) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 15
+ENDOF FUNCTION: i = 15 / sum = 90
+>>>> read line 112: 8 * 9 * 4 * 5 * (5 + 5 + 3 * 9 + 3) + (5 * (9 * 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 120
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 81
+ENDOF FUNCTION: i = 11 / sum = 405
+ENDOF FUNCTION: i = 51 / sum = 173205
+>>>> read line 113: 2 * (9 * (5 + 3) + 3 * 2 + (2 * 3 + 5 + 2) + 6) * ((4 * 4 + 4 * 4) * 5 + 2 + 2) * 7 + 3 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 13
+ENDOF FUNCTION: i = 41 / sum = 169
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 80
+ENDOF FUNCTION: i = 27 / sum = 404
+ENDOF FUNCTION: i = 91 / sum = 955872
+>>>> read line 114: 2 + 8 * 6 * (6 + (9 + 3 * 8 * 9 * 3 + 8))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2600
+ENDOF FUNCTION: i = 27 / sum = 2606
+ENDOF FUNCTION: i = 41 / sum = 156360
+>>>> read line 115: 8 * 8 * (8 + 8 * 5 + 4 + 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 86
+ENDOF FUNCTION: i = 27 / sum = 5504
+>>>> read line 116: ((3 + 9) * 9) + ((4 + 6 + 6) * 7 + 3 + 8) * 9 + 6 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 12
+ENDOF FUNCTION: i = 11 / sum = 108
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+ENDOF FUNCTION: i = 23 / sum = 123
+ENDOF FUNCTION: i = 53 / sum = 16680
+>>>> read line 117: 6 + ((4 + 5 * 7) + 8) + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 63
+ENDOF FUNCTION: i = 15 / sum = 71
+ENDOF FUNCTION: i = 25 / sum = 82
+>>>> read line 118: 3 * 8 + ((6 + 8 * 5 * 4 + 9) * 8 * (5 + 9 + 7 * 2 + 2) * 6) * 9 * 9 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 289
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 44
+ENDOF FUNCTION: i = 49 / sum = 610368
+ENDOF FUNCTION: i = 71 / sum = 49441757
+>>>> read line 119: 3 + ((9 + 8 + 9 * 2) + 6 + 9 + 7 * 7) + 8 * (3 + 5 + 4) * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 52
+ENDOF FUNCTION: i = 31 / sum = 518
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 12
+ENDOF FUNCTION: i = 59 / sum = 57132
+>>>> read line 120: (6 * 9 + 6 + 2 + 9 * 6) * 7 + (3 + 9 + 3 + (9 * 6 + 9 + 4 + 5) + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 426
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 72
+ENDOF FUNCTION: i = 35 / sum = 93
+ENDOF FUNCTION: i = 67 / sum = 3075
+>>>> read line 121: (4 + 7) * 6 + (9 * (2 * 8 * 8) * 3 * 5 * (7 * 9 + 5 + 5) + 8) + 3 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 128
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 73
+ENDOF FUNCTION: i = 45 / sum = 1261448
+ENDOF FUNCTION: i = 69 / sum = 5046068
+>>>> read line 122: (5 * 6 * (4 * 2) * 7 * 7) * ((3 * 5 + 4 + 5) * 3 * 7) * 5 + 5 * 7 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 23 / sum = 11760
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 24
+ENDOF FUNCTION: i = 23 / sum = 504
+ENDOF FUNCTION: i = 69 / sum = 207446439
+>>>> read line 123: 9 + (3 * 3 * 5 * 6) + 4 + ((7 * 4 + 3) * 8 * 5 + 5) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 270
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 31
+ENDOF FUNCTION: i = 23 / sum = 1245
+ENDOF FUNCTION: i = 55 / sum = 6112
+>>>> read line 124: ((4 * 5 + 2) + 2 + 9 + 8) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 22
+ENDOF FUNCTION: i = 23 / sum = 41
+ENDOF FUNCTION: i = 29 / sum = 44
+>>>> read line 125: (3 * (7 + 9 + 2 * 5 + 5) + 5 + 9 * 9) + 9 * ((6 + 5 + 9) * 9 * 4) + 2 + ((2 * 3) + 2 + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 95
+ENDOF FUNCTION: i = 35 / sum = 2691
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 20
+ENDOF FUNCTION: i = 19 / sum = 720
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 6
+ENDOF FUNCTION: i = 15 / sum = 16
+ENDOF FUNCTION: i = 89 / sum = 1944018
+>>>> read line 126: 9 * (8 * 2 * 7 + 5 * 7 * (6 * 3)) + (2 + 7) + (8 * 8 + 6 * 4 * (6 + 8) * 8) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 27 / sum = 14742
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+ENDOF FUNCTION: i = 27 / sum = 31360
+ENDOF FUNCTION: i = 79 / sum = 328094
+>>>> read line 127: (8 + 2 * 2) * 3 * 6 * (3 * 2 * 4) * 7 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 20
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 24
+ENDOF FUNCTION: i = 41 / sum = 483840
+>>>> read line 128: 3 * 8 * (7 * (2 * 3 * 3 + 5 * 2) + 9) + 9 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 46
+ENDOF FUNCTION: i = 27 / sum = 331
+ENDOF FUNCTION: i = 45 / sum = 7955
+>>>> read line 129: 9 + 5 * 7 + ((2 * 2) + 7 * 2) * 4 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 4
+ENDOF FUNCTION: i = 15 / sum = 22
+ENDOF FUNCTION: i = 37 / sum = 485
+>>>> read line 130: (8 + 9 * (2 * 6 * 6 * 3 + 9 * 3) + (7 * 8 + 2 * 7)) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 675
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 406
+ENDOF FUNCTION: i = 49 / sum = 11881
+ENDOF FUNCTION: i = 55 / sum = 71286
+>>>> read line 131: 4 * (8 * 6 * (9 + 4 * 4 * 8 * 3 + 9) + 7 * 5) * 7 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1257
+ENDOF FUNCTION: i = 39 / sum = 301715
+ENDOF FUNCTION: i = 53 / sum = 25344060
+>>>> read line 132: 9 + 9 * 8 + 3 + (2 + (5 + 8 * 9) + (2 + 4 * 8 + 8 + 8 + 7) * 8 + (7 + 9) + 2) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 117
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 71
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+ENDOF FUNCTION: i = 59 / sum = 1538
+ENDOF FUNCTION: i = 81 / sum = 1688
+>>>> read line 133: (4 + 2 + 3 * 9 * (4 * 7 + 3) + 9) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 31
+ENDOF FUNCTION: i = 31 / sum = 2520
+ENDOF FUNCTION: i = 37 / sum = 2529
+>>>> read line 134: 2 + 4 * 2 + 8 * ((7 + 7 + 2) * (5 * 6) + (2 * 5 * 6 + 6 * 6) * 4 * 7) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 30
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 396
+ENDOF FUNCTION: i = 51 / sum = 24528
+ENDOF FUNCTION: i = 73 / sum = 981120
+>>>> read line 135: 6 * 4 * 7 + (8 + 6 + 7 + 7 + 5 + 4) * 4 * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 37
+ENDOF FUNCTION: i = 43 / sum = 1640
+>>>> read line 136: 4 + ((4 * 4 * 2 * 4) + 6 + 8 * (3 * 3 * 9 + 6 + 2 * 3)) * 7 + 3 + 3 * (9 + 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 128
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 267
+ENDOF FUNCTION: i = 49 / sum = 37914
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+ENDOF FUNCTION: i = 77 / sum = 3450616
+>>>> read line 137: (4 + (4 * 5 * 8 * 7 * 3 * 3) + (3 + 5 + 8) + 9 + 3 * 6) * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 10080
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+ENDOF FUNCTION: i = 53 / sum = 60672
+ENDOF FUNCTION: i = 59 / sum = 182016
+>>>> read line 138: (7 * (8 * 8 + 9)) + 7 + 8 * 8 * 5 * (5 * 5 * 5 + 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 73
+ENDOF FUNCTION: i = 15 / sum = 511
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 128
+ENDOF FUNCTION: i = 51 / sum = 2693120
+>>>> read line 139: 3 * 6 * 4 * 5 * ((7 + 6) + 8 + 7 + 4 * 9 * (6 + 2 * 5)) * (8 * 4 + (3 * 6 + 8 + 9 * 4) + 6 * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 40
+ENDOF FUNCTION: i = 37 / sum = 11520
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 140
+ENDOF FUNCTION: i = 35 / sum = 1424
+ENDOF FUNCTION: i = 95 / sum = 5905612800
+>>>> read line 140: (7 + 8 + 5) + 3 * (9 + (4 * 4) + 9) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 20
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+ENDOF FUNCTION: i = 15 / sum = 34
+ENDOF FUNCTION: i = 39 / sum = 6256
+>>>> read line 141: 7 + 7 * 8 * 4 * 9
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 4032
+>>>> read line 142: (5 + 6 + (3 * 6)) + 9 + (2 + 2 * 4) * 2 + ((3 * 3 + 6 * 9 * 9) * 9) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 15 / sum = 29
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1215
+ENDOF FUNCTION: i = 23 / sum = 10935
+ENDOF FUNCTION: i = 71 / sum = 22086
+>>>> read line 143: (4 + 9 * 6 + 7) * 9 * 6 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 85
+ENDOF FUNCTION: i = 27 / sum = 4594
+>>>> read line 144: 4 * 2 * 9 + (9 + 5 + 2 + (3 + 6 * 7 * 3))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 189
+ENDOF FUNCTION: i = 27 / sum = 205
+ENDOF FUNCTION: i = 41 / sum = 277
+>>>> read line 145: 3 * (9 * 6 * 3) + 3 * 7 + 5 + (5 + 4 * 6 + 7 + (2 + 3 * 2 * 6 + 2 * 9) + (9 * 2 + 3 * 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 162
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 558
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 189
+ENDOF FUNCTION: i = 57 / sum = 808
+ENDOF FUNCTION: i = 89 / sum = 4236
+>>>> read line 146: 8 + 8 + 9 * ((6 + 8 + 7) + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 21
+ENDOF FUNCTION: i = 15 / sum = 28
+ENDOF FUNCTION: i = 29 / sum = 700
+>>>> read line 147: 8 * 8 + 6 + (3 + 5 + 6) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 14
+ENDOF FUNCTION: i = 27 / sum = 88
+>>>> read line 148: 5 + 7 + 8 * (6 * (7 * 9) + 6) + 2 * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 63
+ENDOF FUNCTION: i = 15 / sum = 384
+ENDOF FUNCTION: i = 37 / sum = 69138
+>>>> read line 149: 2 + (2 + 3 + 4) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 9
+ENDOF FUNCTION: i = 19 / sum = 77
+>>>> read line 150: 7 + ((7 * 8 * 6 + 4) + 5 * 2) * (6 * 9 + 2 * 4 + (3 * 7 + 7 + 2 * 5 * 9) + (5 * 6 + 5 + 6 * 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 340
+ENDOF FUNCTION: i = 23 / sum = 690
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1350
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 369
+ENDOF FUNCTION: i = 61 / sum = 1943
+ENDOF FUNCTION: i = 95 / sum = 1354271
+>>>> read line 151: 2 * 4 + 9 + (4 * 2) * 8 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 27 / sum = 1600
+>>>> read line 152: 4 * 4 * (4 * 2 + 9 + (2 + 3 + 5 * 6 * 3)) + (3 * (8 * 2 * 2 * 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 180
+ENDOF FUNCTION: i = 31 / sum = 197
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 288
+ENDOF FUNCTION: i = 19 / sum = 864
+ENDOF FUNCTION: i = 65 / sum = 4016
+>>>> read line 153: 9 * (8 * 7 + (7 * 2 + 7 * 2 * 3 * 6)) + 4 * 2 * 7 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 756
+ENDOF FUNCTION: i = 31 / sum = 812
+ENDOF FUNCTION: i = 53 / sum = 511840
+>>>> read line 154: (7 + (9 * 9 * 5 * 4 * 8) + 8 * 8) + (4 + 8 * 2 * 9) + 7 * 7 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 12960
+ENDOF FUNCTION: i = 31 / sum = 103800
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 216
+ENDOF FUNCTION: i = 63 / sum = 728167
+>>>> read line 155: 8 + 4 * (6 * 6 * 5) * 3 + 6 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 180
+ENDOF FUNCTION: i = 31 / sum = 25944
+>>>> read line 156: (8 * (9 + 3 * 2 + 6) * 9) + 2 + 2 * (5 + (9 * 9 * 8 + 6 * 5 * 9) * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 30
+ENDOF FUNCTION: i = 23 / sum = 2160
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 29430
+ENDOF FUNCTION: i = 31 / sum = 176610
+ENDOF FUNCTION: i = 69 / sum = 382184040
+>>>> read line 157: 2 * 4 * (4 * 9) + 4 * (7 + 9 * 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 36
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 64
+ENDOF FUNCTION: i = 33 / sum = 18688
+>>>> read line 158: 4 + 2 + 4 * (2 + 3 * 8 * 4 + (8 + 7 + 9 * 6 + 3))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 147
+ENDOF FUNCTION: i = 35 / sum = 307
+ENDOF FUNCTION: i = 49 / sum = 3070
+>>>> read line 159: 8 * (4 + 4) * 9 + 6 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 23 / sum = 2910
+>>>> read line 160: (6 + (4 + 3) + 5) * 5 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 7
+ENDOF FUNCTION: i = 15 / sum = 18
+ENDOF FUNCTION: i = 25 / sum = 94
+>>>> read line 161: 8 + 5 * 3 * ((7 + 4 + 9 * 3) + (8 * 2 * 5 * 3) + 4 + 4 + 6) + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 60
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 240
+ENDOF FUNCTION: i = 45 / sum = 314
+ENDOF FUNCTION: i = 63 / sum = 12248
+>>>> read line 162: 7 + 5 * (8 + (3 * 3)) + 3 + 2 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+ENDOF FUNCTION: i = 11 / sum = 17
+ENDOF FUNCTION: i = 33 / sum = 213
+>>>> read line 163: 9 * (2 * 9 + 8 + 8 * 6) * 3 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 204
+ENDOF FUNCTION: i = 31 / sum = 5510
+>>>> read line 164: (3 * 7 + 6 * 6 + 4) + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 166
+ENDOF FUNCTION: i = 23 / sum = 173
+>>>> read line 165: (3 + 6) * 4 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+ENDOF FUNCTION: i = 15 / sum = 288
+>>>> read line 166: 5 * 6 * 9 + (2 * 2 + 4 + (5 * 9 + 7 * 8) * 4 * 7) * (4 + 6) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 416
+ENDOF FUNCTION: i = 35 / sum = 11872
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 63 / sum = 849940
+>>>> read line 167: 8 + 7 * 5 + 7 + (9 + 8 * 7 + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 127
+ENDOF FUNCTION: i = 31 / sum = 209
+>>>> read line 168: 2 * (7 * 4 + 5 + 8 + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 47
+ENDOF FUNCTION: i = 23 / sum = 94
+>>>> read line 169: ((8 + 8 * 8 + 2) + (5 + 8) + 5) + (2 + (2 + 7 * 4 * 6 + 4) + 5 * 3) * 4 + 9 + ((3 * 7 + 7) * 5 * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 130
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+ENDOF FUNCTION: i = 29 / sum = 148
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 220
+ENDOF FUNCTION: i = 31 / sum = 681
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 28
+ENDOF FUNCTION: i = 19 / sum = 840
+ENDOF FUNCTION: i = 99 / sum = 4165
+>>>> read line 170: 6 * 3 * (6 + 4 * 8 * 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 320
+ENDOF FUNCTION: i = 23 / sum = 5760
+>>>> read line 171: ((4 + 9 * 3 + 6 + 5) + 9 * 4) * 2 + 4 * 3 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 50
+ENDOF FUNCTION: i = 27 / sum = 236
+ENDOF FUNCTION: i = 45 / sum = 1434
+>>>> read line 172: 9 * ((2 * 6 + 5 * 6) + 4 + 9) * (4 * 8 * (3 + 2 * 2 + 4 * 6) * 8 + 6 + 5) + 4 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 102
+ENDOF FUNCTION: i = 23 / sum = 115
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 84
+ENDOF FUNCTION: i = 39 / sum = 21515
+ENDOF FUNCTION: i = 81 / sum = 22268031
+>>>> read line 173: (8 + 4 + 4 + (2 * 8 * 2 * 5 * 8 + 9) * 4 * 3) + 3 * 5 + 5 + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1289
+ENDOF FUNCTION: i = 43 / sum = 15660
+ENDOF FUNCTION: i = 61 / sum = 78323
+>>>> read line 174: 2 * ((9 * 2 + 7 + 8 * 7 + 3) + (3 + 4 * 8 + 8 * 6) + 7) * 9 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 234
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 384
+ENDOF FUNCTION: i = 49 / sum = 625
+ENDOF FUNCTION: i = 63 / sum = 11257
+>>>> read line 175: 7 + (4 + 3 * 7 + 2) * 3 + 4 * 8 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 51
+ENDOF FUNCTION: i = 35 / sum = 1426
+>>>> read line 176: 8 * (2 + (7 * 5 * 6 + 2 + 2 + 3) * (6 * 3 + 5 * 5) + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 217
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 115
+ENDOF FUNCTION: i = 49 / sum = 25193
+ENDOF FUNCTION: i = 55 / sum = 201544
+>>>> read line 177: (5 + (7 + 5 + 3 * 6)) + 7 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 90
+ENDOF FUNCTION: i = 19 / sum = 95
+ENDOF FUNCTION: i = 29 / sum = 107
+>>>> read line 178: (7 * 4 * 9 * 9 + 9 + (8 * 3 * 3)) * 3 * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 72
+ENDOF FUNCTION: i = 31 / sum = 2349
+ENDOF FUNCTION: i = 41 / sum = 14094
+>>>> read line 179: 6 + 4 * (4 * 2 + 5) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 13
+ENDOF FUNCTION: i = 23 / sum = 520
+>>>> read line 180: 4 * 3 * (7 + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 15
+ENDOF FUNCTION: i = 15 / sum = 180
+>>>> read line 181: 2 + (5 + 6 * 5 + 8 + 5 * 2) * 8 + 9 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 136
+ENDOF FUNCTION: i = 39 / sum = 1117
+>>>> read line 182: 4 + ((5 * 9 * 8 * 5) + (5 + 4 + 6 + 6 + 7) + 3 * 7 + 9 * 7) + (8 * 8 * 9 * 8 + 9 + 4) * (3 + 5 + 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 1800
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 28
+ENDOF FUNCTION: i = 53 / sum = 89782
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 4621
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 17
+ENDOF FUNCTION: i = 99 / sum = 1604919
+>>>> read line 183: (4 * 8 * 5 + 9 + 3 + 5) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 177
+ENDOF FUNCTION: i = 27 / sum = 1239
+>>>> read line 184: (3 * 5 + 4 + 5 + 2 + (7 * 2 * 8 * 3)) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 336
+ENDOF FUNCTION: i = 35 / sum = 362
+ENDOF FUNCTION: i = 41 / sum = 365
+>>>> read line 185: 8 + ((4 * 2) + (5 * 6 * 8 * 8) * 7 * 8) + (3 + 4) * 4 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 1920
+ENDOF FUNCTION: i = 33 / sum = 107968
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 7
+ENDOF FUNCTION: i = 57 / sum = 2159660
+>>>> read line 186: (9 + 7 * 8 + 5) * 3 * 3 + 7 + 6 + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 133
+ENDOF FUNCTION: i = 35 / sum = 1218
+>>>> read line 187: 9 + (3 + 7 + (5 + 5 * 3 + 6 * 7) * 2 * (7 * 8 * 2 + 2))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 252
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 114
+ENDOF FUNCTION: i = 49 / sum = 59736
+ENDOF FUNCTION: i = 55 / sum = 59745
+>>>> read line 188: (8 * 4 * 7 * (4 * 2 + 9 + 8) * 5) + (6 + (4 * 5 + 4) * 7) + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 25
+ENDOF FUNCTION: i = 31 / sum = 28000
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 24
+ENDOF FUNCTION: i = 19 / sum = 210
+ENDOF FUNCTION: i = 61 / sum = 28212
+>>>> read line 189: 4 + 3 + 4 * (4 * 3 + (5 * 4 + 7 + 2 + 6 * 3) + (4 * 4) * 4 * (3 * 5 + 4 * 5 * 6)) + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 105
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 570
+ENDOF FUNCTION: i = 67 / sum = 303240
+ENDOF FUNCTION: i = 85 / sum = 3335648
+>>>> read line 190: 2 + 4 * 2 + (5 * 3) * 8 + ((5 * 2 + 2 * 4 + 9 + 4) + 7 * (9 * 3 + 3 * 2 + 5) * 8 + 4 * 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 15
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 61
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 65
+ENDOF FUNCTION: i = 61 / sum = 247548
+ENDOF FUNCTION: i = 89 / sum = 247764
+>>>> read line 191: 3 * 5 + 6 + 7 + ((2 * 8 * 9 + 7) * 2 * 5 * (2 * 5) + 2) * (6 + (6 + 4 * 7 * 9 * 7) + (5 * 9 + 6 * 8 * 3) + 2 * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 151
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 37 / sum = 15102
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 4410
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1224
+ENDOF FUNCTION: i = 53 / sum = 16926
+ENDOF FUNCTION: i = 113 / sum = 256090380
+>>>> read line 192: (5 + 2 + 5 * 5 + (9 + 3 * 7)) + 7 * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 84
+ENDOF FUNCTION: i = 27 / sum = 144
+ENDOF FUNCTION: i = 37 / sum = 1359
+>>>> read line 193: 3 * 5 * 3 * (8 * 4 + 5 * (4 * 8 + 4) + (3 * 5 * 6 + 3 * 7)) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 36
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 651
+ENDOF FUNCTION: i = 45 / sum = 1983
+ENDOF FUNCTION: i = 63 / sum = 624645
+>>>> read line 194: 2 + 9 * 5 * (2 * 3 * 9 * 9 + 5 + 9) + (4 + 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 500
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+ENDOF FUNCTION: i = 45 / sum = 27509
+>>>> read line 195: (3 * 7 * (3 + 5 + 7)) + ((6 * 3) + 4 + 3 * 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 15
+ENDOF FUNCTION: i = 19 / sum = 315
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 19 / sum = 225
+ENDOF FUNCTION: i = 45 / sum = 540
+>>>> read line 196: (7 * 7 * 2 + (8 * 3 + 4 * 3 * 8 * 3) + 5) + ((2 + 2 + 2 + 7) + 3) + 4 + (5 + 9 + 6 + 9 * 2 + 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2016
+ENDOF FUNCTION: i = 39 / sum = 2119
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 13
+ENDOF FUNCTION: i = 19 / sum = 16
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 63
+ENDOF FUNCTION: i = 95 / sum = 2202
+>>>> read line 197: 8 * 9 * (4 + 6 + 3 * (2 + 3 + 2 + 9 * 2) + 3) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 32
+ENDOF FUNCTION: i = 35 / sum = 419
+ENDOF FUNCTION: i = 49 / sum = 241344
+>>>> read line 198: (3 + 9 * 8) * (4 * 7 * 9 + 4 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 96
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 263
+ENDOF FUNCTION: i = 33 / sum = 25248
+>>>> read line 199: 4 + (3 * 6 + (9 * 9 * 3 + 2 + 6 + 7))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 258
+ENDOF FUNCTION: i = 31 / sum = 276
+ENDOF FUNCTION: i = 37 / sum = 280
+>>>> read line 200: 5 + (2 * (3 * 8 + 5 * 3) * (7 * 2 * 2) * 2 + 8 * 4) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 87
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 28
+ENDOF FUNCTION: i = 45 / sum = 39008
+ENDOF FUNCTION: i = 55 / sum = 156052
+>>>> read line 201: ((6 + 4 + 4 * 4 * 9 + 3) + 8) * 4 * 2 + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 507
+ENDOF FUNCTION: i = 27 / sum = 515
+ENDOF FUNCTION: i = 41 / sum = 4128
+>>>> read line 202: 2 * 2 + (8 * 5 * 3 + 6 * 6) + 5 * 6 * (9 * 6 * 9 * 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 756
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 972
+ENDOF FUNCTION: i = 53 / sum = 4461480
+>>>> read line 203: 5 + (3 + 2 * 5 + 8) + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 33
+ENDOF FUNCTION: i = 23 / sum = 44
+>>>> read line 204: 9 * (9 * 3) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 27
+ENDOF FUNCTION: i = 15 / sum = 1944
+>>>> read line 205: 6 + ((3 * 8 * 6 + 9 * 4) + 3 * 3 * 3) * 7 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 612
+ENDOF FUNCTION: i = 31 / sum = 5535
+ENDOF FUNCTION: i = 45 / sum = 38794
+>>>> read line 206: 3 * ((2 * 5 + 8 + 5 + 3) * 9 * 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 26
+ENDOF FUNCTION: i = 27 / sum = 1638
+ENDOF FUNCTION: i = 33 / sum = 4914
+>>>> read line 207: 5 * 4 + 8 + (7 * (4 + 5) * 8 + 7 + 9 + 8) + 7 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+ENDOF FUNCTION: i = 27 / sum = 528
+ENDOF FUNCTION: i = 49 / sum = 3378
+>>>> read line 208: (4 + 9 + 9 * 7 + (5 * 8 + 5 + 6 + 6)) * 7 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 57
+ENDOF FUNCTION: i = 35 / sum = 211
+ENDOF FUNCTION: i = 45 / sum = 7385
+>>>> read line 209: 4 * 7 * (8 * 8 * 8 + (8 + 4 * 8 + 6 + 7 + 8) * 5) * 8 + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 117
+ENDOF FUNCTION: i = 39 / sum = 3145
+ENDOF FUNCTION: i = 57 / sum = 704488
+>>>> read line 210: (7 + 8 + (8 + 6 + 2 * 2 * 4) * 4) * 7 * 6 * 4 * 9 + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 128
+ENDOF FUNCTION: i = 31 / sum = 572
+ENDOF FUNCTION: i = 53 / sum = 864872
+>>>> read line 211: 9 + 2 * 5 + 3 * 6 * 5
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1740
+>>>> read line 212: 4 * (7 * 5 + 9 * 7 * (9 + 3 + 5 + 2) * 8) + (7 + (4 * 4 * 5 + 2) * 4 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 19
+ENDOF FUNCTION: i = 35 / sum = 46816
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 82
+ENDOF FUNCTION: i = 27 / sum = 363
+ENDOF FUNCTION: i = 73 / sum = 187627
+>>>> read line 213: 4 * 9 + (7 * 5) * 3 + 4 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 35
+ENDOF FUNCTION: i = 27 / sum = 226
+>>>> read line 214: (4 + 2 * 9 * 6 + 9 * 9) + 8 + 8 + 4 + 4 * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2997
+ENDOF FUNCTION: i = 43 / sum = 21147
+>>>> read line 215: 3 * 9 + 9 + ((2 + 8 * 7 + 8 + 2) + 9 * 3 * 5 + 8 + (2 * 7 + 2 + 6 * 8 + 6))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 80
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 182
+ENDOF FUNCTION: i = 61 / sum = 1525
+ENDOF FUNCTION: i = 75 / sum = 1561
+>>>> read line 216: (5 + 6 * 3 * 3 + 4) + ((6 + 2 * 8) + 5 * 8 + (5 + 6 + 6 + 2 + 2 + 3)) + 8 * 4 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 103
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 64
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 24
+ENDOF FUNCTION: i = 45 / sum = 576
+ENDOF FUNCTION: i = 81 / sum = 8244
+>>>> read line 217: (8 + 7 * (2 + 3 * 4 + 2 * 5 + 7) + 9 + 2 * 7) + 4 * 7 + 4 * 6 + (8 * 6 + 3 * (4 + 7))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 117
+ENDOF FUNCTION: i = 43 / sum = 12362
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+ENDOF FUNCTION: i = 19 / sum = 561
+ENDOF FUNCTION: i = 85 / sum = 519957
+>>>> read line 218: 6 * 7 + (9 * 7 * 4 * 4 * 8 * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 64512
+ENDOF FUNCTION: i = 31 / sum = 64554
+>>>> read line 219: 2 * (3 * 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 6
+ENDOF FUNCTION: i = 11 / sum = 12
+>>>> read line 220: 6 + 7 + 7 + ((9 * 8 * 5) + 5 * (5 + 8 * 5 * 6 * 3) + 6 * 8) * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 360
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1170
+ENDOF FUNCTION: i = 45 / sum = 3416448
+ENDOF FUNCTION: i = 63 / sum = 10249404
+>>>> read line 221: ((3 + 2 + 9 * 7 * 7) + 8 * (4 + 6) + (4 * 3) * 7) + (8 + 9 + 2) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 686
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 12
+ENDOF FUNCTION: i = 47 / sum = 48664
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 19
+ENDOF FUNCTION: i = 67 / sum = 48687
+>>>> read line 222: 6 + 8 + 4
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 18
+>>>> read line 223: 5 + (2 * 7 + 7) * (5 * 5 + 3 * 6 + 6 + 7) + 6 * 6 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 21
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 181
+ENDOF FUNCTION: i = 53 / sum = 28276
+>>>> read line 224: 3 + 6 + 5 * 5 + 2 * (9 * 8 * 2 * 6 + 4 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 875
+ENDOF FUNCTION: i = 43 / sum = 63000
+>>>> read line 225: ((6 + 3 * 4 * 7 + 4) + 2 * 3 * 4) * 9 + ((3 * 3 + 5 * 9 * 3) + 9 + (9 + 6) + 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 256
+ENDOF FUNCTION: i = 31 / sum = 3096
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 378
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 15
+ENDOF FUNCTION: i = 37 / sum = 411
+ENDOF FUNCTION: i = 79 / sum = 28275
+>>>> read line 226: 6 + 7
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+>>>> read line 227: (6 + 7 * 3 + 4) + 4 * 4 + 5 * 9 + (9 * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 43
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 54
+ENDOF FUNCTION: i = 41 / sum = 1791
+>>>> read line 228: 7 * 7 * 4 + 9 + (6 * 2 + (5 + 3 * 4 + 6 * 3) * 2 * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 114
+ENDOF FUNCTION: i = 35 / sum = 2016
+ENDOF FUNCTION: i = 53 / sum = 2221
+>>>> read line 229: 3 * 5 + (4 + 6 * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 80
+ENDOF FUNCTION: i = 19 / sum = 95
+>>>> read line 230: 8 + (5 * 9 + 2) + 7 * (2 * 7) + (9 + 6 + 4 * 6 + (7 * 5 + 5 + 2 + 7 * 5))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 47
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 245
+ENDOF FUNCTION: i = 39 / sum = 359
+ENDOF FUNCTION: i = 73 / sum = 1227
+>>>> read line 231: (9 * 5 * 3 * 5 * 8 + 9) * 4 + 8 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 5409
+ENDOF FUNCTION: i = 35 / sum = 108220
+>>>> read line 232: ((5 + 8 * 2 * 2) * (2 * 3 * 3 * 4 + 9 * 6) + 8) + 5 + (6 + 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 52
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 486
+ENDOF FUNCTION: i = 45 / sum = 25280
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+ENDOF FUNCTION: i = 61 / sum = 25296
+>>>> read line 233: 6 + (7 * 8 + 4 + 2 * (6 + 8 + 9 + 6 + 8)) + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 37
+ENDOF FUNCTION: i = 35 / sum = 2294
+ENDOF FUNCTION: i = 45 / sum = 2305
+>>>> read line 234: 9 + (3 * (6 + 2) * 6 + (3 + 8 * 5) + (4 * 7) + (5 + 9)) * 5 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 55
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 28
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+ENDOF FUNCTION: i = 49 / sum = 241
+ENDOF FUNCTION: i = 63 / sum = 1257
+>>>> read line 235: 7 + 6 * ((5 + 8 * 2 + 3) + (5 + 5 * 2 * 5 + 9)) + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 29
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 109
+ENDOF FUNCTION: i = 37 / sum = 138
+ENDOF FUNCTION: i = 51 / sum = 1800
+>>>> read line 236: (6 + 7 * 9) + 6 + (9 + 7 * 2) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 117
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 32
+ENDOF FUNCTION: i = 33 / sum = 930
+>>>> read line 237: 4 * 6 + 5 + 8 * 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 296
+>>>> read line 238: ((3 + 9 + 9 * 6) * 7 + 8 + 8 + 3) * ((4 + 6 * 2 * 7 * 5) * (3 * 2 + 9) + 4 * 9 + 9 + (9 * 4 * 9 * 4 + 4)) + (4 * (7 * 7 + 5 + 9 + 2) * 9 * 7 * (4 * 2)) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 126
+ENDOF FUNCTION: i = 31 / sum = 901
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 700
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 15
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1300
+ENDOF FUNCTION: i = 67 / sum = 95845
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 65
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 41 / sum = 131040
+ENDOF FUNCTION: i = 155 / sum = 605411695
+>>>> read line 239: 8 + (5 + 9 * 4 * 9) + 6 * 6 * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 504
+ENDOF FUNCTION: i = 31 / sum = 21756
+>>>> read line 240: 7 * 4 + (2 * 5) + 4 * 3 * (5 * 2 + 4 + 4 * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 54
+ENDOF FUNCTION: i = 45 / sum = 6804
+>>>> read line 241: ((5 * 9) + 5 * 4 + 2) * (2 * 7) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 45
+ENDOF FUNCTION: i = 19 / sum = 202
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+ENDOF FUNCTION: i = 35 / sum = 2831
+>>>> read line 242: 9 * (6 * 8) * 8 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 48
+ENDOF FUNCTION: i = 19 / sum = 3463
+>>>> read line 243: 8 * (2 * 4 * 9) + 7 + (5 * 4 + 3 + (6 + 9 * 3 + 2) * 3) * (7 * 4 + 6) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 72
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 47
+ENDOF FUNCTION: i = 31 / sum = 210
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 34
+ENDOF FUNCTION: i = 73 / sum = 26971
+>>>> read line 244: 5 + 7 + (3 * 8 * (6 + 7 + 3 + 5 * 9) * 4 * 8 * 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 189
+ENDOF FUNCTION: i = 39 / sum = 580608
+ENDOF FUNCTION: i = 49 / sum = 580620
+>>>> read line 245: 6 + 4
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+>>>> read line 246: ((4 + 2 * 4) * 7 + 5 + (7 + 3 + 4 * 3 + 8 + 8)) * (8 + 9 + 8 + 9) + 8 * (8 + 3 + (3 * 2 * 8 + 5) * 8) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 24
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 58
+ENDOF FUNCTION: i = 45 / sum = 231
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 34
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 53
+ENDOF FUNCTION: i = 27 / sum = 512
+ENDOF FUNCTION: i = 105 / sum = 4025353
+>>>> read line 247: 4 + 7 * (3 + 2 + 4 * (8 * 6 + 5 + 7 + 3 * 8) + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 504
+ENDOF FUNCTION: i = 39 / sum = 4543
+ENDOF FUNCTION: i = 49 / sum = 49973
+>>>> read line 248: 4 + 2 + 6 + 7 * (7 * 5 * 6 + 4 * 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 856
+ENDOF FUNCTION: i = 35 / sum = 16264
+>>>> read line 249: ((6 * 7 * 2) + 5) * 4 + 9 * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 84
+ENDOF FUNCTION: i = 15 / sum = 89
+ENDOF FUNCTION: i = 29 / sum = 2555
+>>>> read line 250: 6 + (9 + 9 + (2 + 5 + 6 * 4 * 4) + 4 * 9) + (8 + 6 * 2) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 208
+ENDOF FUNCTION: i = 35 / sum = 2070
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 28
+ENDOF FUNCTION: i = 59 / sum = 12624
+>>>> read line 251: 5 * 7 + 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 41
+>>>> read line 252: 6 * 8 * (4 + 9 * 5) + (9 * 3 * 3 * 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 65
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 324
+ENDOF FUNCTION: i = 37 / sum = 3444
+>>>> read line 253: 2 * 8 + 6 * ((7 * 6) + 2 * 8) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 42
+ENDOF FUNCTION: i = 15 / sum = 352
+ENDOF FUNCTION: i = 33 / sum = 7747
+>>>> read line 254: (3 * 8 + (7 * 5 * 9) * 6 * 4) * 3 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 315
+ENDOF FUNCTION: i = 27 / sum = 8136
+ENDOF FUNCTION: i = 37 / sum = 24413
+>>>> read line 255: 4 + 2 + 6 * 5 + (4 + 3 * 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 49
+ENDOF FUNCTION: i = 27 / sum = 109
+>>>> read line 256: (8 + 3 * (9 + 5 + 8 * 2)) + 2 * 9 + 4 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 44
+ENDOF FUNCTION: i = 23 / sum = 484
+ENDOF FUNCTION: i = 41 / sum = 4384
+>>>> read line 257: 8 * ((8 * 3 + 6 + 2 + 3 + 7) * (6 + 2 + 9 + 7 * 9)) * 7 * 4 * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 42
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 216
+ENDOF FUNCTION: i = 45 / sum = 9072
+ENDOF FUNCTION: i = 63 / sum = 4064256
+>>>> read line 258: ((9 * 5 * 5) + 7 + 4 + (8 * 7) + (9 + 8 * 3)) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 225
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 56
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 51
+ENDOF FUNCTION: i = 43 / sum = 343
+ENDOF FUNCTION: i = 49 / sum = 347
+>>>> read line 259: ((7 + 8 + 8 + 3 + 3) + 6) * 3 + 6 * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 29
+ENDOF FUNCTION: i = 23 / sum = 35
+ENDOF FUNCTION: i = 37 / sum = 444
+>>>> read line 260: ((6 + 2 * 9 + 4 * 4 + 8) * (7 + 8 * 6 * 4) + 9 * 2) + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 312
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 360
+ENDOF FUNCTION: i = 49 / sum = 224658
+ENDOF FUNCTION: i = 55 / sum = 224665
+>>>> read line 261: 7 + (3 + 4 + 6 + (3 + 3 * 9 + 3 + 9 * 6) + (5 + 7 * 5) + (2 + 6)) * (3 * 2 + 8 * 6 * 5) * 7 * 6 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 396
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 60
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 59 / sum = 477
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 420
+ENDOF FUNCTION: i = 99 / sum = 8537767
+>>>> read line 262: (4 * 9 + 7 * (2 + 6 * 3 * 7 + 6)) + 3 + 9 + (9 * 8 * 2 * 5 + (8 + 2)) + 9 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 174
+ENDOF FUNCTION: i = 31 / sum = 7482
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 23 / sum = 730
+ENDOF FUNCTION: i = 77 / sum = 49398
+>>>> read line 263: (9 + 6 + 8 + (2 + 6 * 6 * 6)) + 9 + (5 * 5) + 2 * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 288
+ENDOF FUNCTION: i = 27 / sum = 311
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 25
+ENDOF FUNCTION: i = 51 / sum = 694
+>>>> read line 264: 6 + ((7 + 6 + 7) + 3) * 9 + (2 * 4) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 20
+ENDOF FUNCTION: i = 15 / sum = 23
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 39 / sum = 538
+>>>> read line 265: 5 + 6 * (5 * 7 * 6 + 3 * 3 + 4) + 9 * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 643
+ENDOF FUNCTION: i = 39 / sum = 35410
+>>>> read line 266: (2 * 5) * 4 + 8 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+ENDOF FUNCTION: i = 19 / sum = 52
+>>>> read line 267: 6 + (8 * 7 + (9 + 6 + 9 * 4 * 3 * 6) * 2 * (9 + 3 * 2 + 6)) * 2 + 7 + (9 * 9 + 2 + 3 * 4 * (3 + 3 * 8 * 4 + 6)) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1728
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 30
+ENDOF FUNCTION: i = 53 / sum = 107040
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 198
+ENDOF FUNCTION: i = 39 / sum = 68112
+ENDOF FUNCTION: i = 115 / sum = 282215
+>>>> read line 268: 4 * 7 + ((9 + 6 + 3) * 5 + 3 + 4 * 6) * 9 + 7 + (5 + 6 + 6 + 2 * 8 * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 18
+ENDOF FUNCTION: i = 27 / sum = 582
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 456
+ENDOF FUNCTION: i = 71 / sum = 5953
+>>>> read line 269: 8 * (5 + 2 + 6) * 3 + 9 + 3 * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 13
+ENDOF FUNCTION: i = 31 / sum = 2268
+>>>> read line 270: 9 * (8 * 5 * 3 + 8 * 6 + (6 + 5)) * 8 + 7 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+ENDOF FUNCTION: i = 27 / sum = 779
+ENDOF FUNCTION: i = 45 / sum = 56101
+>>>> read line 271: 2 * 4 * ((8 * 2 * 3 + 3 * 7 + 5) * (8 * 9 * 3 + 2 + 5 * 3) * 5 * 8 + 8 * 6) + 7 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 362
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 669
+ENDOF FUNCTION: i = 65 / sum = 58122768
+ENDOF FUNCTION: i = 83 / sum = 464982153
+>>>> read line 272: (3 * 3 * 9 + 6 * (4 * 7 + 7 * 8 * 6 * 4)) * 5 * 7 + 7 * (9 * 3 + 4) + ((5 + 9) * 2 + (8 + 5) * 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 6720
+ENDOF FUNCTION: i = 39 / sum = 584640
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 31
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+ENDOF FUNCTION: i = 25 / sum = 328
+ENDOF FUNCTION: i = 97 / sum = 634334945
+>>>> read line 273: 6 + 7 * 5 + 5 + 3 * ((4 + 3 * 6 + 8 + 5) * 6 * (7 * 9 + 7 * 9) * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 55
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 630
+ENDOF FUNCTION: i = 45 / sum = 1247400
+ENDOF FUNCTION: i = 67 / sum = 91060200
+>>>> read line 274: 9 + (4 + (3 * 7 + 9) + 5) * 7 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 30
+ENDOF FUNCTION: i = 19 / sum = 39
+ENDOF FUNCTION: i = 33 / sum = 2016
+>>>> read line 275: (6 * 5 + 5 + 2 * 7 * 9) * 2 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2331
+ENDOF FUNCTION: i = 31 / sum = 37296
+>>>> read line 276: ((9 * 6 + 5 * 9 + 2) + (7 + 7 + 6 + 8 + 9)) * (5 + 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 533
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 37
+ENDOF FUNCTION: i = 41 / sum = 570
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 9
+ENDOF FUNCTION: i = 53 / sum = 5130
+>>>> read line 277: 5 * 8 * ((3 + 9 + 6 * 6) + 5 * 6) * (3 * 6 * 4) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 108
+ENDOF FUNCTION: i = 23 / sum = 678
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 72
+ENDOF FUNCTION: i = 51 / sum = 1952644
+>>>> read line 278: 2 * 2 * 8 * 4 * 8 + (9 * 3 + 4 + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 37
+ENDOF FUNCTION: i = 35 / sum = 1061
+>>>> read line 279: 4 + 9 * 5 * 6 * 2 + (9 * 5 * 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 270
+ENDOF FUNCTION: i = 31 / sum = 1050
+>>>> read line 280: ((5 + 2 + 3) * 5 * (6 + 9 * 4 + 3) * 4 * 8 * 7) + 9 + ((5 * 6 + 3 * 7 + 2 * 3) * 5 * 3 + 8 * 4) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 10
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 63
+ENDOF FUNCTION: i = 45 / sum = 705600
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 699
+ENDOF FUNCTION: i = 39 / sum = 41972
+ENDOF FUNCTION: i = 99 / sum = 5233067
+>>>> read line 281: 2 + ((5 * 6) + (7 + 6) * 6 + 5) * 2 + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 30
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 13
+ENDOF FUNCTION: i = 25 / sum = 263
+ENDOF FUNCTION: i = 39 / sum = 533
+>>>> read line 282: 4 * 9 + (9 + 8 + 4 + 8 + 3 + 9) * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 41
+ENDOF FUNCTION: i = 35 / sum = 385
+>>>> read line 283: 4 * 6 + 4 + 4 * ((6 * 4) * 3 + (2 + 2 + 7 * 2 + 2) + 9 + 7 * 4) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 24
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 24
+ENDOF FUNCTION: i = 45 / sum = 448
+ENDOF FUNCTION: i = 67 / sum = 86016
+>>>> read line 284: 5 + 6 * 4 * 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 352
+>>>> read line 285: 9 * ((9 * 9 + 7 * 9 * 9) + 7 + 2) * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 7128
+ENDOF FUNCTION: i = 27 / sum = 7137
+ENDOF FUNCTION: i = 37 / sum = 321165
+>>>> read line 286: 3 * ((8 + 2 + 8 * 9 * 6) * 8 + 8 * 7 * 6) * (3 + 4 * 5 + (4 + 9 * 7 + 5 + 5) + (5 + 6 * 8))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 972
+ENDOF FUNCTION: i = 35 / sum = 326928
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 101
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 88
+ENDOF FUNCTION: i = 45 / sum = 224
+ENDOF FUNCTION: i = 91 / sum = 219695616
+>>>> read line 287: 6 + (3 * 9 + (7 * 8 + 5 + 3) * (6 * 7) + 7 + (6 * 3 + 5 + 4 * 5 * 7))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 64
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 42
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 945
+ENDOF FUNCTION: i = 63 / sum = 4774
+ENDOF FUNCTION: i = 69 / sum = 4780
+>>>> read line 288: (6 * 4) + 4 * (9 * 9 + (7 * 8 * 3 + 6 + 6) + 4 + (4 + 2 + 9 + 4 + 2) * (3 * 6 * 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 24
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 180
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 21
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 162
+ENDOF FUNCTION: i = 67 / sum = 46332
+ENDOF FUNCTION: i = 83 / sum = 1297296
+>>>> read line 289: 8 * 7 + (3 + 2 * 9 * 3 * 6 * 4) + (2 + 2 + 4 * 6 + 4 * 4) * 7 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 3240
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 208
+ENDOF FUNCTION: i = 65 / sum = 24534
+>>>> read line 290: 4 + (7 * (9 * 6 * 5 * 8) + 4 * 3) + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 2160
+ENDOF FUNCTION: i = 27 / sum = 45372
+ENDOF FUNCTION: i = 37 / sum = 45383
+>>>> read line 291: (9 + (4 * 3 * 4 * 9)) * (6 * 2 + 9 * 9 + 7 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 432
+ENDOF FUNCTION: i = 19 / sum = 441
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 203
+ENDOF FUNCTION: i = 47 / sum = 89523
+>>>> read line 292: 8 + 5 * (4 * 4 * 2 * 9 * (5 + 8 + 6 * 3 + 3 * 9) * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 540
+ENDOF FUNCTION: i = 43 / sum = 466560
+ENDOF FUNCTION: i = 53 / sum = 6065280
+>>>> read line 293: 6 + 3 * 9 + (3 + (7 * 2 * 5 + 3) * (4 + 5 + 9 * 5 + 9) * 4 * 3 * 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 73
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 99
+ENDOF FUNCTION: i = 53 / sum = 180576
+ENDOF FUNCTION: i = 67 / sum = 180657
+>>>> read line 294: ((5 + 4 * 5 * 7) + 9 * 5 * 8 + 9) + (4 + 2 + 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 315
+ENDOF FUNCTION: i = 31 / sum = 12969
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 15
+ENDOF FUNCTION: i = 47 / sum = 12984
+>>>> read line 295: 8 + (4 * (6 + 8 * 4 * 4 * 4 * 5) + 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 4480
+ENDOF FUNCTION: i = 31 / sum = 17924
+ENDOF FUNCTION: i = 37 / sum = 17932
+>>>> read line 296: 3 * 2 * (9 * 5 + 3 * 4 + 6) * 3 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 198
+ENDOF FUNCTION: i = 35 / sum = 3573
+>>>> read line 297: 6 * 7 + 5 * (2 * (5 + 7)) + 9 + (7 + 4 * 2 + (5 + 4 * 2) * 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 12
+ENDOF FUNCTION: i = 11 / sum = 24
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 18
+ENDOF FUNCTION: i = 27 / sum = 80
+ENDOF FUNCTION: i = 61 / sum = 1217
+>>>> read line 298: 9 * 5 * ((4 * 8 + 9) + 2 + 7 + 4 * 5) * (5 + 5 * 3 * 4 * 8 + 9) * 7 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 41
+ENDOF FUNCTION: i = 27 / sum = 270
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 969
+ENDOF FUNCTION: i = 71 / sum = 82413452
+>>>> read line 299: 8 + 8 * (5 + 6 + 8 + (6 * 9 * 9))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 486
+ENDOF FUNCTION: i = 23 / sum = 505
+ENDOF FUNCTION: i = 33 / sum = 8080
+>>>> read line 300: (9 * 3) * 9 + 3 * 9 * 3 * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 27
+ENDOF FUNCTION: i = 27 / sum = 13284
+>>>> read line 301: 2 + 4 * (5 + 3 + 6 * 4 * 7) + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 392
+ENDOF FUNCTION: i = 31 / sum = 2359
+>>>> read line 302: 2 * 6 + 2 * (6 + (7 + 3 + 6) + (6 + 4 * 7 + 3) + 9) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 73
+ENDOF FUNCTION: i = 37 / sum = 104
+ENDOF FUNCTION: i = 55 / sum = 1465
+>>>> read line 303: 8 + 8 + 4 + (2 * 2 + (8 * 3 * 2 + 2 * 9) * 9 * (4 + 4) * 6) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 450
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+ENDOF FUNCTION: i = 45 / sum = 196128
+ENDOF FUNCTION: i = 63 / sum = 784592
+>>>> read line 304: 7 + 9 + 4 * 2
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 40
+>>>> read line 305: 2 * 7 + (8 + 7 * 2 + 3 * 8 * 3) * 9 * 4 * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 792
+ENDOF FUNCTION: i = 43 / sum = 261144
+>>>> read line 306: 8 * (7 + 3 + 9) + ((5 + 5 + 7 * 3 * 7 + 6) + 4 + 2) * 3 * 7 + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 19
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 363
+ENDOF FUNCTION: i = 31 / sum = 369
+ENDOF FUNCTION: i = 63 / sum = 10945
+>>>> read line 307: 9 * ((6 + 8) + (5 * 4 + 9 + 3 * 5 + 5)) * (4 * 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 165
+ENDOF FUNCTION: i = 33 / sum = 179
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+ENDOF FUNCTION: i = 49 / sum = 25776
+>>>> read line 308: 4 + (6 + 3 * 2 * 2 + 8) + (9 * 7 * 5 + 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 44
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 318
+ENDOF FUNCTION: i = 41 / sum = 366
+>>>> read line 309: ((8 * 2 * 7 * 2) + 7 + (4 + 6 + 5) + 5) * (3 + 9) + (7 + 6 + 5 * (9 * 3 * 8 + 9 + 5 * 6) * 9 * 8) + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 224
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 15
+ENDOF FUNCTION: i = 37 / sum = 251
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 12
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 1380
+ENDOF FUNCTION: i = 43 / sum = 1788480
+ENDOF FUNCTION: i = 101 / sum = 1791495
+>>>> read line 310: (7 * (8 + 4 + 9 * 2 * 4 + 4) * 7 + 5 + 2 + (3 * 5 + 4)) * (2 * 4 * 3 * 4) * 8 + 9 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 172
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 19
+ENDOF FUNCTION: i = 53 / sum = 8454
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 96
+ENDOF FUNCTION: i = 85 / sum = 19478043
+>>>> read line 311: 2 + 6 * 8 + 9 + 3 + (4 * 4 * 2 * 9 * 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 2016
+ENDOF FUNCTION: i = 39 / sum = 2092
+>>>> read line 312: ((4 + 5 + 4 * 7 + 4) * 8 * 6) + 6 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 95
+ENDOF FUNCTION: i = 27 / sum = 4560
+ENDOF FUNCTION: i = 37 / sum = 13698
+>>>> read line 313: ((7 + 4) * 2 * 8 * 4 + 9 * 2) * 3 * 7 + 5 + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+ENDOF FUNCTION: i = 27 / sum = 1426
+ENDOF FUNCTION: i = 45 / sum = 29959
+>>>> read line 314: 7 * (8 * 3 + 5 * (7 + 2 + 7 + 3 * 6 + 3) + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 117
+ENDOF FUNCTION: i = 39 / sum = 3401
+ENDOF FUNCTION: i = 45 / sum = 23807
+>>>> read line 315: 9 + 3 * (5 * 6 * 4) * 3 * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 120
+ENDOF FUNCTION: i = 27 / sum = 12960
+>>>> read line 316: 4 + 5 * 4 + 5
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 41
+>>>> read line 317: 2 * 3 + 8 * 5 + 5 * 4
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 300
+>>>> read line 318: 6 + (6 * (2 + 3) * 5 + 5 * 5 + 6) * 7 * 9 * (4 + (5 * 8 + 7 + 3 + 8) * 6 + 5 + (3 + 3 * 8 * 4))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 5
+ENDOF FUNCTION: i = 27 / sum = 781
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 58
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 192
+ENDOF FUNCTION: i = 49 / sum = 569
+ENDOF FUNCTION: i = 95 / sum = 28211589
+>>>> read line 319: 4 + 6 + 6 * 4 + ((6 + 3 + 9 + 4) + (4 * 4 * 7)) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 22
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 112
+ENDOF FUNCTION: i = 29 / sum = 134
+ENDOF FUNCTION: i = 51 / sum = 1584
+>>>> read line 320: 7 + 7 + 5 * (6 + 3 * 3 * (8 + 6 + 6) + 8 * 3) * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 20
+ENDOF FUNCTION: i = 31 / sum = 1644
+ENDOF FUNCTION: i = 49 / sum = 93708
+>>>> read line 321: (3 + 3 + 2) * ((7 + 9 * 7) + 9 * 9 + (3 + 5 + 9) + 2 * 3) * 4 + 8 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 112
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 17
+ENDOF FUNCTION: i = 41 / sum = 3324
+ENDOF FUNCTION: i = 69 / sum = 106382
+>>>> read line 322: 3 + 3 + (4 + 6 * 8 * 6) + 3 + 4 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 480
+ENDOF FUNCTION: i = 35 / sum = 498
+>>>> read line 323: (4 * (3 + 3 + 8 + 6 * 5) + 9 + 3 + 9 + 7) + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 100
+ENDOF FUNCTION: i = 39 / sum = 428
+ENDOF FUNCTION: i = 45 / sum = 436
+>>>> read line 324: 9 * 9 * 2 * (8 + 5 + (4 * 7 * 9 * 3 * 5 + 6) * 2 + 5)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 3786
+ENDOF FUNCTION: i = 39 / sum = 7603
+ENDOF FUNCTION: i = 53 / sum = 1231686
+>>>> read line 325: (9 + 4 + 4) + 2 + (2 + 3) * (7 * 9 + (8 + 4 + 5) + 7 * 7 + 7) * 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 17
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 17
+ENDOF FUNCTION: i = 31 / sum = 616
+ENDOF FUNCTION: i = 65 / sum = 73920
+>>>> read line 326: (5 + (5 * 5 + 5 * 6 * 7) * 5 * 4 * 5) * 2 * 6 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1260
+ENDOF FUNCTION: i = 35 / sum = 126500
+ENDOF FUNCTION: i = 49 / sum = 1518007
+>>>> read line 327: 8 + 3 + (8 + (5 + 8 + 4)) + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 17
+ENDOF FUNCTION: i = 15 / sum = 25
+ENDOF FUNCTION: i = 29 / sum = 44
+>>>> read line 328: 8 * 7 * 2 * (5 * (4 + 2 + 3 + 7 * 8 + 7) + 6 + 4 * 3)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 135
+ENDOF FUNCTION: i = 39 / sum = 2055
+ENDOF FUNCTION: i = 53 / sum = 230160
+>>>> read line 329: (8 + 7 + 5) + 6 * 9 + 8 + 9 + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 20
+ENDOF FUNCTION: i = 31 / sum = 257
+>>>> read line 330: (9 + 5 + (4 * 4) * (4 + 2) + (6 * 9) + 2) + 2 + 9 * 3 + 5
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 16
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 54
+ENDOF FUNCTION: i = 39 / sum = 236
+ENDOF FUNCTION: i = 57 / sum = 746
+>>>> read line 331: (3 * 2 + (6 * 3 * 8 * 4) * 8 * 4 + (6 * 6 + 4)) * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 576
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 40
+ENDOF FUNCTION: i = 45 / sum = 18664
+ENDOF FUNCTION: i = 51 / sum = 149312
+>>>> read line 332: 4 + (8 * 5 * 3 + 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 122
+ENDOF FUNCTION: i = 19 / sum = 126
+>>>> read line 333: 9 * (2 + 7 * 8 * (9 * 2 * 9 * 9) + 6) * 7 + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 1458
+ENDOF FUNCTION: i = 31 / sum = 104982
+ENDOF FUNCTION: i = 45 / sum = 6613868
+>>>> read line 334: 7 + 5 + 4
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 16
+>>>> read line 335: 2 + 5 + 7 * (5 + 7 * 4 + 3 + 7 + (5 * 9 * 6 + 8 * 5 * 2)) * 2 + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2780
+ENDOF FUNCTION: i = 43 / sum = 2838
+ENDOF FUNCTION: i = 65 / sum = 79467
+>>>> read line 336: 4 + (4 + 5 + (3 + 7 * 2 + 5 * 9)) + (5 + 5 * 4) * (7 * 9) * (3 * 8 + 5 * 7 * 2 * (6 * 7 + 2 + 5)) * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 225
+ENDOF FUNCTION: i = 27 / sum = 234
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 40
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 63
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 49
+ENDOF FUNCTION: i = 35 / sum = 19894
+ENDOF FUNCTION: i = 101 / sum = 1045270548
+>>>> read line 337: 5 + 9 + ((7 * 2 + 3 * 4 + 6 + 2) * 8 * 8) * (2 * 5 + (9 * 7 * 4 * 9) * (8 + 4) * 8) + ((8 * 2 * 4) * 5 + 4 * 3 + 7)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 76
+ENDOF FUNCTION: i = 31 / sum = 4864
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 2268
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 12
+ENDOF FUNCTION: i = 37 / sum = 218688
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 64
+ENDOF FUNCTION: i = 27 / sum = 979
+ENDOF FUNCTION: i = 115 / sum = 1066761043
+>>>> read line 338: 6 * ((9 * 4 * 4 + 8) * 8 * 6 + 4 * 8) + 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 152
+ENDOF FUNCTION: i = 31 / sum = 58400
+ENDOF FUNCTION: i = 41 / sum = 350406
+>>>> read line 339: 3 * 7 + (2 * 7 * 6 + 4 + 3 * 3) + 8 + (4 * 5) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 273
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 20
+ENDOF FUNCTION: i = 49 / sum = 331
+>>>> read line 340: 4 * 5 * 7 + 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 146
+>>>> read line 341: 5 * (4 + 3 + (5 + 6 * 2) + 4 * 3) * 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 22
+ENDOF FUNCTION: i = 27 / sum = 99
+ENDOF FUNCTION: i = 37 / sum = 990
+>>>> read line 342: 6 * (3 + 5 * (4 * 5 + 9)) + 6 + (9 * 3 * 7 * 6) * 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 29
+ENDOF FUNCTION: i = 19 / sum = 232
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 1134
+ENDOF FUNCTION: i = 51 / sum = 17724
+>>>> read line 343: (6 * 5 + 4 * 3 * 7 * (8 * 9)) * 4 + 4 + 8 * (3 + 7 * 5) + 2
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 72
+ENDOF FUNCTION: i = 27 / sum = 51408
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 50
+ENDOF FUNCTION: i = 59 / sum = 10282202
+>>>> read line 344: 9 * 4 * 5 + ((7 * 6 * 2 * 8 + 3 * 5) * 7 * 4 + 8 + 5) + 3 + 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 3375
+ENDOF FUNCTION: i = 39 / sum = 94513
+ENDOF FUNCTION: i = 61 / sum = 94704
+>>>> read line 345: 9 + 2 + ((5 * 4 + 2 + 4) + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 26
+ENDOF FUNCTION: i = 19 / sum = 32
+ENDOF FUNCTION: i = 29 / sum = 43
+>>>> read line 346: ((6 + 7 * 8 * 2 + 8) + 3) + 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 216
+ENDOF FUNCTION: i = 23 / sum = 219
+ENDOF FUNCTION: i = 29 / sum = 223
+>>>> read line 347: ((6 + 3 + 5 + 3) + 6 * 6 * 7 + 7) + ((3 + 3 * 9 * 3) * (2 + 9 * 3 * 2 * 6 + 3) + (9 + 6 + 4 + 6 + 9) + (9 + 5) + 8 + 4)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 17
+ENDOF FUNCTION: i = 31 / sum = 973
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 162
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 399
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 34
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 14
+ENDOF FUNCTION: i = 81 / sum = 64698
+ENDOF FUNCTION: i = 119 / sum = 65671
+>>>> read line 348: 4 * (4 + (3 + 3 + 2 * 4 + 8) + (3 * 3 * 3 * 7 + 6 * 4) * 7 * 8 + 7) * (7 * 6 * 9 * 7) + (5 * 5) * 5 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 40
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 780
+ENDOF FUNCTION: i = 61 / sum = 46151
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 2646
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 25
+ENDOF FUNCTION: i = 103 / sum = 14653866270
+>>>> read line 349: (6 * 3) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 18
+ENDOF FUNCTION: i = 11 / sum = 27
+>>>> read line 350: 7 * 2 + 3 + 3 + 7 + 9
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 36
+>>>> read line 351: 4 * 5 + 4 + (5 * 6 * (5 + 3 + 4 * 3) * 2 + 6) + 5 * (8 * 4 + 8)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 36
+ENDOF FUNCTION: i = 31 / sum = 2166
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 40
+ENDOF FUNCTION: i = 63 / sum = 87800
+>>>> read line 352: ((4 * 2) * 7 + (7 * 9 + 6 * 9 * 7 * 8) + 8 + 7 * 8) + (9 + 8) * (8 + 8 * 5) + 5 * ((9 + 8 + 5) + 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 8
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 34776
+ENDOF FUNCTION: i = 49 / sum = 278776
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 17
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 80
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 22
+ENDOF FUNCTION: i = 15 / sum = 31
+ENDOF FUNCTION: i = 99 / sum = 691406795
+>>>> read line 353: ((3 * 5 * 4 * 2 * 9) + 9 + 3 * 2) + ((2 * 5) + (7 + 7 + 8 * 4 + 2 * 5) * 8) + (5 * 7 * 2 * 9) + 7 + (9 * 4 + 9) + (8 * (6 * 7 * 7 + 3) + 2)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1080
+ENDOF FUNCTION: i = 31 / sum = 2184
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 10
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 450
+ENDOF FUNCTION: i = 37 / sum = 3680
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 630
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 45
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 297
+ENDOF FUNCTION: i = 23 / sum = 2378
+ENDOF FUNCTION: i = 139 / sum = 8924
+>>>> read line 354: 3 * (9 + 5 * (8 * 9 * 6)) * 5 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 432
+ENDOF FUNCTION: i = 19 / sum = 6048
+ENDOF FUNCTION: i = 33 / sum = 544320
+>>>> read line 355: 5 + (5 + (6 + 8 * 6 * 9 + 7 + 4) + 2 * 3 * (7 * 5 * 5 * 4 + 2)) * 3 + 5 * 6 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 767
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 702
+ENDOF FUNCTION: i = 57 / sum = 1630044
+ENDOF FUNCTION: i = 79 / sum = 234727296
+>>>> read line 356: 4 + 3 + 4 + (2 * 9 + 3 + 9 + 7) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 37
+ENDOF FUNCTION: i = 35 / sum = 57
+>>>> read line 357: ((9 * 7 + 6 + 7 + 5) + 5 + 6 + 6 * 9 + (3 * 5)) + 9 + 2 + 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 81
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 15
+ENDOF FUNCTION: i = 45 / sum = 897
+ENDOF FUNCTION: i = 59 / sum = 911
+>>>> read line 358: 3 * 4 + 4 * (9 + 3 + (8 * 7) + 7) + (7 * 9 + 2) + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 56
+ENDOF FUNCTION: i = 19 / sum = 75
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 65
+ENDOF FUNCTION: i = 51 / sum = 1274
+>>>> read line 359: 9 * 6 + ((5 + 8 + 9 * 5 + 7) * (6 * 8 * 8 + 6) + 5) * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 117
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 390
+ENDOF FUNCTION: i = 41 / sum = 45635
+ENDOF FUNCTION: i = 55 / sum = 274134
+>>>> read line 360: 9 + 7 * (4 + 2 * (7 * 9 + 3 + 4 * 7 * 5) * 3 * 8) * 6 * 2 * 6
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2450
+ENDOF FUNCTION: i = 39 / sum = 352800
+ENDOF FUNCTION: i = 61 / sum = 406425600
+>>>> read line 361: 9 * 6
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 54
+>>>> read line 362: (9 + 6 * 6) + ((6 * 4 + 8 + 3 * 2) + (3 + 8 + 6 * 9 + 3 + 9) + 8) * 4
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 90
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 70
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 165
+ENDOF FUNCTION: i = 49 / sum = 243
+ENDOF FUNCTION: i = 69 / sum = 1332
+>>>> read line 363: (7 + 7 * 3 + 2 * 9) * (3 + 7 * 7) * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 396
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 70
+ENDOF FUNCTION: i = 37 / sum = 249480
+>>>> read line 364: (5 * (2 * 2) * 9) + 5 + (5 * (4 * 4 + 3 + 8) * (6 + 6 + 2 + 4 * 7)) * 8 * 6 * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 4
+ENDOF FUNCTION: i = 15 / sum = 180
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 27
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 126
+ENDOF FUNCTION: i = 41 / sum = 17010
+ENDOF FUNCTION: i = 79 / sum = 7428240
+>>>> read line 365: (5 * 4 + 6 * 6 * 7) * (3 * 4 * (9 * 5))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 17 / sum = 1092
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 45
+ENDOF FUNCTION: i = 15 / sum = 540
+ENDOF FUNCTION: i = 39 / sum = 589680
+>>>> read line 366: (3 + 2 * 2 * 2 + 3 + 5) + 6 * (2 + 6 + 5 * (2 + 4 + 7 * 7) * 8) * 3
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 28
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 91
+ENDOF FUNCTION: i = 31 / sum = 9464
+ENDOF FUNCTION: i = 67 / sum = 965328
+>>>> read line 367: 4 * 3 + (8 * 9 * (7 + 7 + 6 + 6) * 9)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 26
+ENDOF FUNCTION: i = 27 / sum = 16848
+ENDOF FUNCTION: i = 37 / sum = 16860
+>>>> read line 368: 2 * 8 + (6 * 9) * 6 + 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 54
+ENDOF FUNCTION: i = 23 / sum = 429
+>>>> read line 369: ((2 + 6 + 8 * 9 * 7 * 2) + (7 * 5 + 2 + 7) * 5 * 2) + 7 * 6 * 9
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 2016
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 44
+ENDOF FUNCTION: i = 49 / sum = 20600
+ENDOF FUNCTION: i = 63 / sum = 1112778
+>>>> read line 370: 8 * 4 + 4 * 2 + (5 * 8) + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 40
+ENDOF FUNCTION: i = 27 / sum = 119
+>>>> read line 371: (5 + 6) + 9 + ((4 * 5 * 9) * 7 * 5 * 8 * 5) * 8 * 2 * (5 + 9 * 5 + 6)
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 11
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 180
+ENDOF FUNCTION: i = 27 / sum = 252000
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 76
+ENDOF FUNCTION: i = 69 / sum = 306456320
+>>>> read line 372: 5 + 4 + 3 * (3 * (6 * 8 * 9 * 2 * 4 * 9) + 6 * (6 * 8 + 4 + 6))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 31104
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 58
+ENDOF FUNCTION: i = 49 / sum = 5412444
+ENDOF FUNCTION: i = 63 / sum = 64949328
+>>>> read line 373: (9 * 4 * 7 + 8 * (8 + 9 + 6 * 7) * 6) + 7 + 3 * 8
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 13 / sum = 161
+ENDOF FUNCTION: i = 35 / sum = 251160
+ENDOF FUNCTION: i = 49 / sum = 2009360
+>>>> read line 374: 2 * 8 + (6 * 4 * 6 * 5 * 6 * (3 * 4 + 7))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 19
+ENDOF FUNCTION: i = 31 / sum = 82080
+ENDOF FUNCTION: i = 41 / sum = 82096
+>>>> read line 375: (6 * (2 + 2) + 5) * (6 + 9 * 4 * 8 + 3 + 7) * 5 * 3 + 7
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 5 / sum = 4
+ENDOF FUNCTION: i = 15 / sum = 29
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 490
+ENDOF FUNCTION: i = 55 / sum = 213157
+>>>> read line 376: 2 + (4 * 8 * 7 + (8 * 8 * 4) * 2 * (2 + 6 + 7 * 9 * 4 + 2))
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 9 / sum = 256
+START FUNCTION: i = 0 / sum = 0
+ENDOF FUNCTION: i = 21 / sum = 542
+ENDOF FUNCTION: i = 53 / sum = 520320
+ENDOF FUNCTION: i = 59 / sum = 520322
+Sum of all lines = 3644840513007 (chars parsed: 18710)
+MAX INT          = 18446744073709551615
